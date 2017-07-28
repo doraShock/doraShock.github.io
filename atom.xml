@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-07-28T07:41:46.731Z</updated>
+  <updated>2017-07-28T07:53:25.458Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -20,15 +20,16 @@
     <link href="https://dorashock.github.io/2017/07/27/my-first-blog/"/>
     <id>https://dorashock.github.io/2017/07/27/my-first-blog/</id>
     <published>2017-07-27T01:59:40.000Z</published>
-    <updated>2017-07-28T07:41:46.731Z</updated>
+    <updated>2017-07-28T07:53:25.458Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>shide ma</p>
+    <content type="html"><![CDATA[<p>＜br/&gt;</p>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>　　琢磨了好久，终于把博客弄出来了，过程中学了不少东西，毕竟是个菜鸟，可以学的东西很多；本来第一章写下搭建的过程比较好，但是莫名其妙想对之前的生活做个总结；或许觉得搭起属于自己的博客之后，就是一个新的人生吧…</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;shide ma&lt;/p&gt;
-
+      &lt;p&gt;＜br/&amp;gt;&lt;/p&gt;
+&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;　　琢磨了好久，终于把博客弄出来了，过程中学了不少东西，毕竟是个菜鸟，可以学的东西很多；本来第一章写下搭建的
     
     </summary>
     
