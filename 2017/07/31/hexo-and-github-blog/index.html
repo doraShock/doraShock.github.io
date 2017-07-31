@@ -20,7 +20,16 @@
 <meta property="og:image" content="http://i.imgur.com/N2WtJNU.png">
 <meta property="og:image" content="http://i.imgur.com/Avj2H2G.png">
 <meta property="og:image" content="http://i.imgur.com/O1rtPaL.png">
-<meta property="og:updated_time" content="2017-07-31T08:12:06.864Z">
+<meta property="og:image" content="http://i.imgur.com/2PkqfRs.png">
+<meta property="og:image" content="http://i.imgur.com/oFfUS0F.png">
+<meta property="og:image" content="http://i.imgur.com/yeKfttl.png">
+<meta property="og:image" content="http://i.imgur.com/aTnHb4K.png">
+<meta property="og:image" content="http://i.imgur.com/aVL7hz8.png">
+<meta property="og:image" content="http://i.imgur.com/AzR7tro.png">
+<meta property="og:image" content="http://i.imgur.com/yuUqobf.png">
+<meta property="og:image" content="http://i.imgur.com/VYqRoL3.png">
+<meta property="og:image" content="http://i.imgur.com/npoywpZ.png">
+<meta property="og:updated_time" content="2017-07-31T09:51:27.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建独立博客">
 <meta name="twitter:description" content="前言　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没">
@@ -198,7 +207,16 @@
 <blockquote>
 <p><strong><font color="#3385FF" size="4">软件安装</font></strong></p>
 </blockquote>
-<p>　<strong><font color="#1922D8">——Node.js安装——</font></strong><br>　　点击上面的内容进入Node官网的下载页面，下拉选择下载的版本，根据我的英语水平认为，左边的是当前的稳定版，右边的是最新版，我喜欢新事物，所以我下载的是右边的版本。<br><img src="http://i.imgur.com/upG1pQX.png" alt=""><br>　　下载完成后双击打开，直接安装，一直点击下一步，需要修改目录就修改一下，其它内容没有必要修改，最后安装完成。<br><br>　<strong><font color="#1922D8">——Git安装——</font></strong><br>　　同样点击进入下载页面，选择Windows版本的点击就可以下载，默认是64位的，有其他选择可以在点击跳转页面进行选择<br><img src="http://i.imgur.com/N2WtJNU.png" alt=""><br>　　安装过程也是一直下一步，在安装第三步的时候选择第二个选项如下图<br><img src="http://i.imgur.com/Avj2H2G.png" alt=""><br>　　继续装结束，在右击菜单的选项中就会多出两个选项如下，Git GUI Here进入视图界面，Git Base Here 进入命令行界面，本程序用的是命令行界面<br><img src="http://i.imgur.com/O1rtPaL.png" alt=""><br>　　这样一来两个软件都安装完成了，接下来可以安装Hexo了。</p>
+<p>　<strong><font color="#1922D8">——Node.js安装——</font></strong><br>　　点击上面的内容进入Node官网的下载页面，下拉选择下载的版本，根据我的英语水平认为，左边的是当前的稳定版，右边的是最新版，我喜欢新事物，所以我下载的是右边的版本</p>
+<p><img src="http://i.imgur.com/upG1pQX.png" alt="">  </p>
+<p>　　下载完成后双击打开，直接安装，一直点击下一步，需要修改目录就修改一下，其它内容没有必要修改，最后安装完成。<br></p>
+<p>　<strong><font color="#1922D8">——Git安装——</font></strong><br>　　同样点击进入下载页面，选择Windows版本的点击就可以下载，默认是64位的，有其他选择可以在点击跳转页面进行选择</p>
+<p><img src="http://i.imgur.com/N2WtJNU.png" alt="">  </p>
+<p>　　安装过程也是一直下一步，在安装第三步的时候选择第二个选项如下图</p>
+<p><img src="http://i.imgur.com/Avj2H2G.png" alt="">  </p>
+<p>　　继续装结束，在右击菜单的选项中就会多出两个选项如下，Git GUI Here进入视图界面，Git Base Here 进入命令行界面，本程序用的是命令行界面</p>
+<p><img src="http://i.imgur.com/O1rtPaL.png" alt="">  </p>
+<p>　　这样一来两个软件都安装完成了，接下来可以安装Hexo了。</p>
 <blockquote>
 <p><strong><font color="#3385FF" size="4">安装Hexo</font></strong></p>
 </blockquote>
@@ -215,6 +233,43 @@ hexo clean       //用于清理本地已生成的静态文件，没有缩写
 </code></pre><p>　　继续执行指令安装依赖包：</p>
 <pre><code>npm install
 </code></pre><p>　　然后使用hexo命令先生成静态文件，然后启动服务器，命令行就会提示可以访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>进行查看，这就是Hexo3的默认主题landscape，看起来就很高级，只用几个命令就有这样的效果，我当时也是很激动的。当然，这只是本地服务器，要让别人可以访问在接下来会进行介绍。</p>
+<blockquote>
+<p><strong><font color="#3385FF" size="4">部署GitHub</font></strong></p>
+</blockquote>
+<p>　　GitHub账号很好申请，有的话就不用申请了，没有的话到GitHub官网申请一下，也没有什么难度，具体就不介绍了。申请完后进入个人中心界面如下图</p>
+<p><img src="http://i.imgur.com/2PkqfRs.png" alt="">  </p>
+<p>　　点击Repositories进入仓库，然后点击new新建一个仓库显示如下</p>
+<p><img src="http://i.imgur.com/oFfUS0F.png" alt="">  </p>
+<p>　　这边也有一个需要注意的地方就是仓库的名称最好是：GitHub的用户名.github.io，因为这样你默认的访问路径就不带后缀，比如我的用户名是 dorashock，仓库名称就是 doraShock.github.io，访问路径就是 <a href="https://dorashock.github.io/">https://dorashock.github.io/</a>，如果用其它名字比如我用 blogBackup 来命名的话，访问路径就是 <a href="https://dorashock.github.io/blogBackup，这样你部署上去的项目就会没有样式，因为静态页面默认样式在根路径，当然不是说不可以这样弄，我也是后面才知道，可以在配置里面进行设置的，这个下面会说到。">https://dorashock.github.io/blogBackup，这样你部署上去的项目就会没有样式，因为静态页面默认样式在根路径，当然不是说不可以这样弄，我也是后面才知道，可以在配置里面进行设置的，这个下面会说到。</a><br>　　仓库建立后接下来就要部署项目了，首先打开Hexo目录下的配置文件_config.yml，最好使用文本编辑器，在文件末尾加上如下配置</p>
+<pre><code>deploy:  
+type: git
+repo: 
+  github: git@github.com:doraShock/doraShock.github.io,master
+</code></pre><p>　　第一个doraShock是我GitHub的用户名，第二个是我仓库的地址，这边注意一点就是配置文件里的”:”后面一定要跟一个空格，主题配置也是一样的，当初头像没加空格就搞了我半天。配置完成后保存，如果是第一次使用，或者使用GitHub没用ssh连接的需要配置秘钥，在Git Bash输入如下命令检查是否配置过：</p>
+<pre><code>ls -al ~/.ssh
+</code></pre><p>　　    如果没有文件就说明第一次配置，如果有的话打开C盘，用户文件夹下面，你的用户名里面.ssh文件夹，删除该文件夹下所有文件即可，然后输入下面指令，中间需要输入的情况直接回车，要回车三次，邮箱就是GitHub注册的邮箱：</p>
+<pre><code>ssh-keygen -t rsa -C &quot;872149493@qq.com&quot;
+</code></pre><p><img src="http://i.imgur.com/yeKfttl.png" alt="">  </p>
+<p>　　继续输入下面指令：</p>
+<pre><code>ssh-agent -s
+</code></pre><p><img src="http://i.imgur.com/aTnHb4K.png" alt="">  </p>
+<p>　　继续输入指令:</p>
+<pre><code>ssh-add ~/.ssh/id_rsa
+</code></pre><p>　　这里会报一个错如下，如果没错就跳过，如果有错误的话输入下面的指令：</p>
+<p><img src="http://i.imgur.com/aVL7hz8.png" alt="">  </p>
+<pre><code>eval `ssh-agent -s`
+ssh-add
+</code></pre><p><img src="http://i.imgur.com/AzR7tro.png" alt="">  </p>
+<p>　　这样你的ssh key就生成了，可以打开.ssh文件夹下面的id_rsa.pub文件复制，也可以在命令行输入下面命令进行复制：</p>
+<pre><code>clip &lt; ~/.ssh/id_rsa.pub
+</code></pre><p>　　接着打开你的GitHub主页，点击右上角的头像，选择 setting，然后选择 SSH and GPD keys如下图，点击 SSH keys 右边的New SSH key添加你的key，标题随便写</p>
+<p><img src="http://i.imgur.com/yuUqobf.png" alt="">  </p>
+<p><img src="http://i.imgur.com/VYqRoL3.png" alt="">  </p>
+<p>　　添加后需要验证密码，输入密码后就会发送邮件告诉你已经添加了，这时候回到命令行输入命令进行测试：</p>
+<pre><code>ssh -T git@github.com
+</code></pre><p>　　我这里有个警告，没有就算了，有的话直接输入yes</p>
+<p><img src="http://i.imgur.com/npoywpZ.png" alt="">  </p>
+<p>　　这样ssh就配置好了，输入 hexo g 生成静态文件，然后输入hexo d 部署你的项目到GitHub上面去</p>
 
       
 
@@ -482,6 +537,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">人生</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -491,14 +554,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">人生</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
               </li>
             
             <div class="clearfix"></div>
