@@ -16,10 +16,15 @@
 <meta property="og:site_name" content="Shock.Le">
 <meta property="og:description" content="前言　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-07-31T07:15:11.253Z">
+<meta property="og:image" content="http://i.imgur.com/upG1pQX.png">
+<meta property="og:image" content="http://i.imgur.com/N2WtJNU.png">
+<meta property="og:image" content="http://i.imgur.com/Avj2H2G.png">
+<meta property="og:image" content="http://i.imgur.com/O1rtPaL.png">
+<meta property="og:updated_time" content="2017-07-31T08:06:36.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建独立博客">
 <meta name="twitter:description" content="前言　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没">
+<meta name="twitter:image" content="http://i.imgur.com/upG1pQX.png">
   
     <link rel="alternative" href="/atom.xml" title="Shock.Le" type="application/atom+xml">
   
@@ -183,16 +188,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。<br><a id="more"></a></p>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　我个人是win10的操作系统，安装的是Hexo3的版本</p>
 <blockquote>
-<p>软件准备<br></p>
+<p><strong><font color="#3385FF" size="4">软件准备</font></strong></p>
 </blockquote>
 <p>　　<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>：创建博客框架。<br>　　<a href="https://git-scm.com/download" target="_blank" rel="external">Git客户端</a>：上传Hexo到GitHub</p>
 <blockquote>
-<p>软件安装<br></p>
+<p><strong><font color="#3385FF" size="4">软件安装</font></strong></p>
 </blockquote>
-<p>　　## node.js安装 ##</p>
+<p>　<strong><font color="#1922D8">——Node.js安装——</font></strong><br>　　点击上面的内容进入Node官网的下载页面，下拉选择下载的版本，根据我的英语水平认为，左边的是当前的稳定版，右边的是最新版，我喜欢新事物，所以我下载的是右边的版本。<br><img src="http://i.imgur.com/upG1pQX.png" alt=""><br>　　下载完成后双击打开，直接安装，一直点击下一步，需要修改目录就修改一下，其它内容没有必要修改，最后安装完成。<br><br>　<strong><font color="#1922D8">——Git安装——</font></strong><br>　　同样点击进入下载页面，选择Windows版本的点击就可以下载，默认是64位的，有其他选择可以在点击跳转页面进行选择<br><img src="http://i.imgur.com/N2WtJNU.png" alt=""><br>　　安装过程也是一直下一步，在安装第三步的时候选择第二个选项如下图<br><img src="http://i.imgur.com/Avj2H2G.png" alt=""><br>　　继续装结束，在右击菜单的选项中就会多出两个选项如下，Git GUI Here进入视图界面，Git Base Here 进入命令行界面，本程序用的是命令行界面<br><img src="http://i.imgur.com/O1rtPaL.png" alt=""><br>　　这样一来两个软件都安装完成了，接下来可以安装Hexo了。</p>
+<blockquote>
+<p><strong><font color="#3385FF" size="4">安装Hexo</font></strong></p>
+</blockquote>
+<p>　　Hexo常用的有四个命令，在安装完成后有一篇默认的博客里就有介绍，命令如下：</p>
+<pre><code>hexo generate    //可用hexo g,用于生成静态文件
+hexo server      //可用hexo s,用于启动服务器，主要用来本地预览
+hexo deploy      //可用hexo d,用于将本地文件发布到github上
+hexo new         //可用hexo n,用于新建一篇文章
+hexo clean       //用于清理本地已生成的静态文件，没有缩写
+</code></pre><p>　　在任意位置右键选择Git Base Here进入命令行界面，输入安装指令：</p>
+<pre><code>npm install -g hexo
+</code></pre><p>　　安装完成后在你常用的文件夹下面新建文件夹Hexo(如：E:\Hexo)，进入该文件夹，右键打开Git命令行界面，输入Hexo初始化的命令如下，Hexo就会在该文件夹建立网站所需要的文件：</p>
+<pre><code>hexo init
+</code></pre><p>　　继续执行指令安装依赖包：</p>
+<pre><code>npm install
+</code></pre><p>　　然后使用hexo命令先生成静态文件，然后启动服务器，命令行就会提示可以访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>进行查看，这就是Hexo3的默认主题landscape，看起来就很高级，只用几个命令就有这样的效果，我当时也是很激动的。当然，这只是本地服务器，要让别人可以访问在接下来会进行介绍。</p>
 
       
 
