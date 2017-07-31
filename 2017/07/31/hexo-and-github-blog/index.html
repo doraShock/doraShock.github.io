@@ -29,7 +29,8 @@
 <meta property="og:image" content="http://i.imgur.com/yuUqobf.png">
 <meta property="og:image" content="http://i.imgur.com/VYqRoL3.png">
 <meta property="og:image" content="http://i.imgur.com/npoywpZ.png">
-<meta property="og:updated_time" content="2017-07-31T09:51:27.608Z">
+<meta property="og:image" content="http://i.imgur.com/TysDDj4.jpg">
+<meta property="og:updated_time" content="2017-07-31T10:03:25.053Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建独立博客">
 <meta name="twitter:description" content="前言　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没">
@@ -269,7 +270,17 @@ ssh-add
 <pre><code>ssh -T git@github.com
 </code></pre><p>　　我这里有个警告，没有就算了，有的话直接输入yes</p>
 <p><img src="http://i.imgur.com/npoywpZ.png" alt="">  </p>
-<p>　　这样ssh就配置好了，输入 hexo g 生成静态文件，然后输入hexo d 部署你的项目到GitHub上面去</p>
+<p>　　这样ssh就配置好了，输入 hexo g 生成静态文件，然后输入hexo d 部署你的项目到GitHub上面去，如果命令报错 Deployer not found: git ，就输入下面的命令安装hexo-deployer-git模块：</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>　　继续执行部署的命令，完成后就可以访问自己的域名进行查看了，我的是<a href="https://dorashock.github.io/">https://dorashock.github.io/</a>，默认主题样式如下</p>
+<p><img src="http://i.imgur.com/TysDDj4.jpg" alt=""></p>
+<p>　　这里如果是第一次使用Git的话会执行报错，报错原因也很好理解，就是没有输入GitHub的用户名和邮箱而已，执行下面的命令就可以了：</p>
+<pre><code>git config --global user.name &quot;你的名称&quot;   
+git config --global user.email &quot;你的邮箱&quot; 
+</code></pre><p>　　然后就可以看到自己博客了，是不是很简单，默认的样式都让人觉得很有成就感。</p>
+<blockquote>
+<p><strong><font color="#3385FF" size="4">写一篇博客</font></strong></p>
+</blockquote>
 
       
 
@@ -537,14 +548,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">人生</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -554,6 +557,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">人生</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
               </li>
             
             <div class="clearfix"></div>
