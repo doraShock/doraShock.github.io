@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://i.imgur.com/VYqRoL3.png">
 <meta property="og:image" content="http://i.imgur.com/npoywpZ.png">
 <meta property="og:image" content="http://i.imgur.com/TysDDj4.jpg">
-<meta property="og:updated_time" content="2017-08-01T07:49:20.778Z">
+<meta property="og:updated_time" content="2017-08-01T07:57:13.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建独立博客">
 <meta name="twitter:description" content="前言　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没">
@@ -241,7 +241,7 @@ hexo clean       //用于清理本地已生成的静态文件，没有缩写
 <p><img src="http://i.imgur.com/2PkqfRs.png" alt="">  </p>
 <p>　　点击Repositories进入仓库，然后点击new新建一个仓库显示如下</p>
 <p><img src="http://i.imgur.com/oFfUS0F.png" alt="">  </p>
-<p>　　这边也有一个需要注意的地方就是仓库的名称最好是：GitHub的用户名.github.io，因为这样你默认的访问路径就不带后缀，比如我的用户名是 dorashock，仓库名称就是 doraShock.github.io，访问路径就是 <a href="https://dorashock.github.io/">https://dorashock.github.io/</a>，如果用其它名字比如我用 blogBackup 来命名的话，访问路径就是 “<a href="https://dorashock.github.io/blogBackup/”，这样你部署上去的项目就会没有样式，因为静态页面默认样式在根路径，当然不是说不可以这样弄，我也是后面才知道，可以在配置里面进行设置的，这个下面会说到。">https://dorashock.github.io/blogBackup/”，这样你部署上去的项目就会没有样式，因为静态页面默认样式在根路径，当然不是说不可以这样弄，我也是后面才知道，可以在配置里面进行设置的，这个下面会说到。</a><br>　　仓库建立后接下来就要部署项目了，首先打开Hexo目录下的配置文件_config.yml，最好使用文本编辑器，在文件末尾加上如下配置</p>
+<p>　　这边也有一个需要注意的地方就是仓库的名称最好是：GitHub的用户名.github.io，因为这样你默认的访问路径就不带后缀，比如我的用户名是 dorashock，仓库名称就是 doraShock.github.io，访问路径就是 <a href="https://dorashock.github.io/">https://dorashock.github.io/</a>，如果用其它名字比如我用 blogBackup 来命名的话，访问路径就是 dorashock.github.io/blogBackup/，这样你部署上去的项目就会没有样式，因为静态页面默认样式在根路径，当然不是说不可以这样弄，我也是后面才知道，可以在配置里面进行设置的，这个下面会说到。<br>　　仓库建立后接下来就要部署项目了，首先打开Hexo目录下的配置文件_config.yml，最好使用文本编辑器，在文件末尾加上如下配置</p>
 <pre><code>deploy:  
 type: git
 repo: 
