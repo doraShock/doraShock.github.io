@@ -4,8 +4,8 @@
 
     
   <url>
-    <loc>http://dorashock.coding.me/2017/07/31/hexo-and-github-blog/</loc>
-    <lastmod>2017-07-31T10:03:25.053Z</lastmod>
+    <loc>https://dorashock.github.io/2017/07/31/hexo-and-github-blog/</loc>
+    <lastmod>2017-08-01T07:24:34.643Z</lastmod>
     <data>
         <display>
         <title>Hexo+GitHub搭建独立博客</title>
@@ -20,7 +20,7 @@
          
            
              
-              <breadCrumb title="技术" url="http://dorashock.coding.me/categories/%E6%8A%80%E6%9C%AF/"/>
+              <breadCrumb title="技术" url="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
@@ -28,7 +28,7 @@
 
     
   <url>
-    <loc>http://dorashock.coding.me/2017/07/27/my-first-blog/</loc>
+    <loc>https://dorashock.github.io/2017/07/27/my-first-blog/</loc>
     <lastmod>2017-07-31T08:14:14.495Z</lastmod>
     <data>
         <display>
@@ -42,7 +42,7 @@
          
            
              
-              <breadCrumb title="文章" url="http://dorashock.coding.me/categories/%E6%96%87%E7%AB%A0/"/>
+              <breadCrumb title="文章" url="https://dorashock.github.io/categories/%E6%96%87%E7%AB%A0/"/>
           
         </display>
     </data>
