@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dorashock.github.io/2017/08/11/hexo-theme-litten/</loc>
+    
+    <lastmod>2017-08-11T07:33:13.753Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dorashock.github.io/2017/07/31/hexo-and-github-blog/</loc>
     
     <lastmod>2017-08-01T07:57:13.724Z</lastmod>
@@ -58,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://dorashock.github.io/assets/demo/mediator/demo.html</loc>
+    <loc>https://dorashock.github.io/assets/demo/my_news_reader/index.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dorashock.github.io/assets/demo/my_news_reader/index.html</loc>
+    <loc>https://dorashock.github.io/assets/demo/mediator/demo.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
