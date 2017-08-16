@@ -163,6 +163,137 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Linux-and-Nginx-command" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/16/Linux-and-Nginx-command/">Linux常用命令</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/16/Linux-and-Nginx-command/" class="archive-article-date">
+  	<time datetime="2017-08-16T09:46:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。  </p>
+<blockquote>
+<p>Linux相关</p>
+</blockquote>
+<pre><code>ls -a                                 #查看目录下所以文件
+pwd                                   #查看当前路径
+mkdir test                            #新建文件夹
+mv                                    #移动或重命名
+cp -r test test1                      #复制文件 -r递归目录下所有文件
+touch  test/a.txt                     #创建txt
+rm -rf test/                          #删除文件
+find                                    #在文件系统中搜索某文件
+locate interfaces                     #搜索interfaces文件
+vi test                               #文本编辑器
+ESC或i或：                             #切换编辑模式：命令模式、插入模式、编辑模式
+命令模式下：
+:q                                    #退出
+:q!                                   #强制退出
+:wq                                   #保存并退出
+:set number                           #显示行号
+:set nonumber                         #隐藏行号
+/apache                               #在文档中查找apache 按n跳到下一个，shift+n上一个
+yyp                                   #复制光标所在行，并粘贴
+</code></pre><blockquote>
+<p>Tomcat相关</p>
+</blockquote>
+<pre><code>netstat –apn                          #查看端口占用
+./startup.sh                          #启动tomcat
+./shutdown.sh                         #停止tomcat
+tail -f ../logs/catalina.out          #查看tomcat的控制台输出
+ps -ef |grep tomcat                   #看是否已经有tomcat在运行了
+kill -9 pid                           #如果有，用kill;pid 为相应的进程号
+</code></pre><blockquote>
+<p>Nginx相关</p>
+</blockquote>
+<pre><code>./nginx -s reload                     #修改配置后重新加载生效
+./nginx -s reopen                     #重新打开日志文件
+./nginx -t -c /path/to/nginx.conf     #测试Nginx配置文件是否正确
+ps -ef | grep nginx                  #查看启动的Nginx目录
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Nginx</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/16/Linux-and-Nginx-command/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Instructions-for-Tampermonkey" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -298,15 +429,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">畅言</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
         		</li>
       		
 		</ul>
@@ -397,11 +528,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
         		</li>
       		
 		</ul>
@@ -633,22 +764,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">畅言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
               </li>
              
@@ -661,7 +776,35 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">畅言</a>
               </li>
              
               <li class="article-tag-list-item">

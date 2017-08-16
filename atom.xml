@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-08-16T07:25:49.913Z</updated>
+  <updated>2017-08-16T10:05:00.405Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -14,6 +14,71 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux常用命令</title>
+    <link href="https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/"/>
+    <id>https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/</id>
+    <published>2017-08-16T09:46:26.000Z</published>
+    <updated>2017-08-16T10:05:00.405Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。  </p>
+<blockquote>
+<p>Linux相关</p>
+</blockquote>
+<pre><code>ls -a                                 #查看目录下所以文件
+pwd                                   #查看当前路径
+mkdir test                            #新建文件夹
+mv                                    #移动或重命名
+cp -r test test1                      #复制文件 -r递归目录下所有文件
+touch  test/a.txt                     #创建txt
+rm -rf test/                          #删除文件
+find                                    #在文件系统中搜索某文件
+locate interfaces                     #搜索interfaces文件
+vi test                               #文本编辑器
+ESC或i或：                             #切换编辑模式：命令模式、插入模式、编辑模式
+命令模式下：
+:q                                    #退出
+:q!                                   #强制退出
+:wq                                   #保存并退出
+:set number                           #显示行号
+:set nonumber                         #隐藏行号
+/apache                               #在文档中查找apache 按n跳到下一个，shift+n上一个
+yyp                                   #复制光标所在行，并粘贴
+</code></pre><blockquote>
+<p>Tomcat相关</p>
+</blockquote>
+<pre><code>netstat –apn                          #查看端口占用
+./startup.sh                          #启动tomcat
+./shutdown.sh                         #停止tomcat
+tail -f ../logs/catalina.out          #查看tomcat的控制台输出
+ps -ef |grep tomcat                   #看是否已经有tomcat在运行了
+kill -9 pid                           #如果有，用kill;pid 为相应的进程号
+</code></pre><blockquote>
+<p>Nginx相关</p>
+</blockquote>
+<pre><code>./nginx -s reload                     #修改配置后重新加载生效
+./nginx -s reopen                     #重新打开日志文件
+./nginx -t -c /path/to/nginx.conf     #测试Nginx配置文件是否正确
+ps -ef | grep nginx                  #查看启动的Nginx目录
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。  
+    
+    </summary>
+    
+      <category term="技术" scheme="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Linux" scheme="https://dorashock.github.io/tags/Linux/"/>
+    
+      <category term="Tomcat" scheme="https://dorashock.github.io/tags/Tomcat/"/>
+    
+      <category term="Nginx" scheme="https://dorashock.github.io/tags/Nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>Tampermonkey安装说明-百度云非破解不限速下载方法</title>
@@ -362,11 +427,11 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
+    
       <category term="yilia" scheme="https://dorashock.github.io/tags/yilia/"/>
     
       <category term="畅言" scheme="https://dorashock.github.io/tags/%E7%95%85%E8%A8%80/"/>
-    
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   
@@ -487,9 +552,9 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
-    
       <category term="github" scheme="https://dorashock.github.io/tags/github/"/>
+    
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   

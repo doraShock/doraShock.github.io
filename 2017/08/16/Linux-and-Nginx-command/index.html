@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dorashock.github.io">
-  <title>Tag: 感悟 | Shock.Le</title>
+  <title>Linux常用命令 | Shock.Le</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小小程序员~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shock.Le">
-<meta property="og:url" content="https://dorashock.github.io/tags/感悟/index.html">
+  <meta name="description" content="前言　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。    Linux相关  ls -a                                 #查看目录下所以文件 pwd                                   #查看当前路径 mkdir test">
+<meta name="keywords" content="Linux,Tomcat,Nginx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令">
+<meta property="og:url" content="https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/index.html">
 <meta property="og:site_name" content="Shock.Le">
-<meta property="og:description" content="小小程序员~">
+<meta property="og:description" content="前言　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。    Linux相关  ls -a                                 #查看目录下所以文件 pwd                                   #查看当前路径 mkdir test">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-16T10:05:00.405Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shock.Le">
-<meta name="twitter:description" content="小小程序员~">
+<meta name="twitter:title" content="Linux常用命令">
+<meta name="twitter:description" content="前言　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。    Linux相关  ls -a                                 #查看目录下所以文件 pwd                                   #查看当前路径 mkdir test">
   
     <link rel="alternative" href="/atom.xml" title="Shock.Le" type="application/atom+xml">
   
@@ -161,75 +163,244 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Linux-and-Nginx-command" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/27/my-first-blog/" class="archive-article-date">
-  	<time datetime="2017-07-27T01:59:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/27/my-first-blog/">我的博客</a>
+    <h1 class="article-title" itemprop="name">
+      Linux常用命令
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/08/16/Linux-and-Nginx-command/" class="archive-article-date">
+  	<time datetime="2017-08-16T09:46:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。  </p>
+<blockquote>
+<p>Linux相关</p>
+</blockquote>
+<pre><code>ls -a                                 #查看目录下所以文件
+pwd                                   #查看当前路径
+mkdir test                            #新建文件夹
+mv                                    #移动或重命名
+cp -r test test1                      #复制文件 -r递归目录下所有文件
+touch  test/a.txt                     #创建txt
+rm -rf test/                          #删除文件
+find                                    #在文件系统中搜索某文件
+locate interfaces                     #搜索interfaces文件
+vi test                               #文本编辑器
+ESC或i或：                             #切换编辑模式：命令模式、插入模式、编辑模式
+命令模式下：
+:q                                    #退出
+:q!                                   #强制退出
+:wq                                   #保存并退出
+:set number                           #显示行号
+:set nonumber                         #隐藏行号
+/apache                               #在文档中查找apache 按n跳到下一个，shift+n上一个
+yyp                                   #复制光标所在行，并粘贴
+</code></pre><blockquote>
+<p>Tomcat相关</p>
+</blockquote>
+<pre><code>netstat –apn                          #查看端口占用
+./startup.sh                          #启动tomcat
+./shutdown.sh                         #停止tomcat
+tail -f ../logs/catalina.out          #查看tomcat的控制台输出
+ps -ef |grep tomcat                   #看是否已经有tomcat在运行了
+kill -9 pid                           #如果有，用kill;pid 为相应的进程号
+</code></pre><blockquote>
+<p>Nginx相关</p>
+</blockquote>
+<pre><code>./nginx -s reload                     #修改配置后重新加载生效
+./nginx -s reopen                     #重新打开日志文件
+./nginx -t -c /path/to/nginx.conf     #测试Nginx配置文件是否正确
+ps -ef | grep nginx                  #查看启动的Nginx目录
+</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢老板的打赏~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">人生</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Nginx</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/文章/" class="article-tag-list-link color3">文章</a>
+        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/08/15/Instructions-for-Tampermonkey/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Tampermonkey安装说明-百度云非破解不限速下载方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="Linux-and-Nginx-command" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cyt8pWV7m"; 
+var conf = "f540d75f8bd3512af5e1b0ef7b02cea1"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -252,9 +423,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

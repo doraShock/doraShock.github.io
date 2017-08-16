@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/</loc>
+    <lastmod>2017-08-16T10:05:00.405Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用命令</title>
+        <pubTime>2017-08-16T09:46:26.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Tomcat</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dorashock.github.io/2017/08/11/hexo-theme-litten/</loc>
     <lastmod>2017-08-16T09:44:08.157Z</lastmod>
     <data>
@@ -13,11 +37,11 @@
         
         <tag>hexo</tag>
          
+        <tag>blog</tag>
+         
         <tag>yilia</tag>
          
         <tag>畅言</tag>
-         
-        <tag>blog</tag>
          
          
            
@@ -63,9 +87,9 @@
         
         <tag>hexo</tag>
          
-        <tag>blog</tag>
-         
         <tag>github</tag>
+         
+        <tag>blog</tag>
          
          
            
