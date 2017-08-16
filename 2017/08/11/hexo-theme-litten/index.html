@@ -21,8 +21,8 @@
 <meta property="og:image" content="http://i.imgur.com/u9dKJTc.png">
 <meta property="og:image" content="http://i.imgur.com/It6HVwT.png">
 <meta property="og:image" content="http://i.imgur.com/qFi4ZtQ.png">
-<meta property="og:image" content="http://i.imgur.com/q6P6qkU.png">
-<meta property="og:updated_time" content="2017-08-11T07:57:21.909Z">
+<meta property="og:image" content="http://i.imgur.com/P1idADL.png">
+<meta property="og:updated_time" content="2017-08-16T09:44:08.157Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo主题yilia配置和畅言评论配置">
 <meta name="twitter:description" content="前言　　上一篇博客讲了hexo的安装以及提交到GitHub访问，本来想早点写这个主题配置的博客，但是新人写博客真的很耗时间，上篇博客就写了好久，加上工作等原因，也就一直没有写，今天觉得还是写出来吧，了了我一桩心事，而且既然做博客的话就做的认真一点。　　hexo的主题还是非常的丰富的，可以直接百度，我在知乎上看到回答的有哪些好看的Hexo主题，点击进去看别人推荐就好了，而且有的直接贴图，并且带了链接">
@@ -441,7 +441,7 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
 <p>　　但是这样肯定不可以，还是要解决问题的，我在 Issues 里面搜索有的人是把这地方的左边距加大，但是我觉得效果不完美，我自己查看元素发现点开前和点开后弹出栏多了一个 class:hide ，我再源代码上加上去以后，编译后在访问还是没有该 class ，清除记录后也一样，后来我再去看，发现 hide 的样式只是 z-index 变为0了，于是我把默认的 z-index:998 修改成 z-index:1 ,在上传以后就没有问题了，测了测基本功能，没什么影响，于是就这样使用了，具体修改 Hexo\themes\yilia\source 路径下的 main.266c1c.css，找到 .tools-col 样式，有好几个，只有一个有 z-index 属性，修改了就可以了。  </p>
 <h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>　　对了，最后再说一下，想要自己的博客或者文章可以在百度搜索里面搜索到的话，具体参考上一篇博客中的嘟嘟大神的博客里找如何认证网站。当然按照百度认证的文件认证来说，我是一次都没成功，网上找的删除所有内容也不行，后来试了下加标签的就可以，但是也是在我删了《!DOCTYPE HTML》标签然后把百度给的标签放在 《html》 标签下的第一行才可以的，你们试的时候多试几次，我也不知道内部机制，就比如说我提交了好久，但是还是搜索不到，有的人说是网站没建成，我觉得也有可能吧。<br>　　文章写好了需要提交链接也有介绍，这边想讲一下一个主动提交的方法，不需要自己写代码，没有代码功底或者不想写代码的可以参考下：如果有火狐浏览器的的话下载一个 HttpRequester 插件，其它的http请求测插件应该也可以，我没试，但是原理应该差不多，然后把百度链接提交的主动推送接口调用地址填到URL里面，参数那个调用地址已经补全了，请求方式为POST，然后在Content里填上自己提交的链接，点击Submit就提交成功了。流程如下图所示。  </p>
 <p><img src="http://i.imgur.com/qFi4ZtQ.png" alt="">  </p>
-<p><img src="http://i.imgur.com/q6P6qkU.png" alt="">  </p>
+<p><img src="http://i.imgur.com/P1idADL.png" alt="">  </p>
 
       
 
@@ -722,18 +722,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -750,15 +738,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">人生</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">感悟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
             
             <div class="clearfix"></div>
