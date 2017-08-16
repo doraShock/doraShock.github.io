@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-08-11T07:57:21.909Z</updated>
+  <updated>2017-08-16T02:28:33.581Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -14,6 +14,81 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Tampermonkey安装说明-百度云非破解不限速下载方法</title>
+    <link href="https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/"/>
+    <id>https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/</id>
+    <published>2017-08-15T08:45:26.000Z</published>
+    <updated>2017-08-16T02:28:33.581Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。<br>　　本来是不打算写的记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。</p>
+<a id="more"></a>
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>　　Tampermonkey支持多个浏览器，主流浏览器都可以使用，底层我也没去了解，做web编程的应该大致了解就是加了一些JavaScript语言，精通的人也可以自己研究编写脚本。<br>　　之前百度网盘分享的文件是可以不论大小使用下载器直接下载的，首先要准备两个百度账号，使用一个关注另外一个，找到要下载的文件保存到自己的网盘，然后分享，登陆另外一个账号到分享动态直接点击下载没有大文件显示，并且可以用下载器如下图  </p>
+<p><img src="http://i.imgur.com/IRNJChL.png" alt="">  </p>
+<p>　　所以说如果是这样的话有前段开发经验的人看看代码就可以直接下载自己想要的东西了，一个是我太懒，第二个切换账号也不方便，然后就找到了本篇的方法。<br>　　软件安装很简单，本教程以360安全浏览器为例，下面是个浏览器下载地址：  </p>
+<pre><code>常用浏览器安装：
+搜狗浏览器：      http://ie.sogou.com/app/search/Tampermonkey
+360安全浏览器：   https://ext.se.360.cn/webstore/search/tampermonkey
+360极速浏览器：   https://ext.chrome.360.cn/webstore/search/tampermonkey
+火狐浏览器：      https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/?src=search
+遨游浏览器：      http://extension.maxthon.cn/detail/index.php?view_id=1680&amp;category_id=
+欧朋浏览器：      https://addons.opera.com/zh-cn/extensions/details/tampermonkey-beta/?display=en
+                （遨游浏览器的是Violentmonkey）
+其它浏览器可以去浏览器的拓展中心搜索 Tampermonkey  然后进行安装
+</code></pre><p>　　如果嫌弃地址不好记，也和其它浏览器一样去拓展中心搜索，以360安全浏览器为例，打开浏览器，右上菜单栏有个扩展，点击后选择添加，如果没找到可以鼠标右键浏览器头部，勾选插件栏  </p>
+<p><img src="http://i.imgur.com/DSSKHLG.png" alt="">  </p>
+<p>　　然后在右上角搜索栏搜索Tampermonkey，然后选择安装就可以了　 </p>
+<h2 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h2><p><img src="http://i.imgur.com/JMMY8MV.png" alt="">  </p>
+<p>　　安装完成后在右上角插件栏就会多一个插件，点击选择获取新脚本，点击图片中所示的GreasyFork就可以进入脚本仓库，这里面有各种别人写好的脚本上传，都很有用，可以搜索自己想要的脚本  </p>
+<p><img src="http://i.imgur.com/Mm4eiM5.png" alt="">  </p>
+<p><img src="http://i.imgur.com/f4yN9Qn.png" alt="">  </p>
+<p>　　比方说我们搜索百度的话，就可以看到跟百度有关的脚本了，如下所示  </p>
+<p><img src="http://i.imgur.com/aSU6FG9.png" alt="">  </p>
+<p>　　当然这里面就有网盘的脚本了，但是我也不知道是不是有效的，我下载直接下载助手没有用，不知道是因为冲突还是什么原因原因，下面贴上几个有用的脚本链接，我自己用没问题的：</p>
+<pre><code>百度网盘解析下载地址：https://greasyfork.org/zh-CN/scripts/29796-百度云解析-blog-tsyinpin-com-优化版
+解决百度云大文件下载限制：https://greasyfork.org/zh-CN/scripts/17800
+优化百度-搜狗-谷歌搜索结果之重定向去除-去广告：https://greasyfork.org/zh-CN/scripts/14178
+知乎免登陆：https://greasyfork.org/zh-CN/scripts/6489
+vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349
+网页强制复制：https://greasyfork.org/zh-CN/scripts/218
+网盘提取工具：https://greasyfork.org/zh-CN/scripts/18733
+</code></pre><p>　　我使用的就是网盘提取工具和下载地址解析，可以不用输提取码，直接解析地址添加到下载器中下载，安卓方法如下，打开网盘解析的下载地址，点击安装此脚本  </p>
+<p><img src="http://i.imgur.com/bEnESY8.png" alt="">  </p>
+<p>　　跳转后选择安装，然后页面自动关闭，这样就安装完成了  </p>
+<p><img src="http://i.imgur.com/KGeXrEn.png" alt="">  </p>
+<p>　　安装完我习惯重启浏览器，点击插件栏的Tampermonkey，选择仪表盘就可以管理自己的插件了  </p>
+<p><img src="http://i.imgur.com/0S9UJ6R.png" alt="">  </p>
+<p>　　这个时候打开百度网盘，选择需要下载的文件，你会惊喜的发现多了个按钮  </p>
+<p><img src="http://i.imgur.com/DKl2Zp1.png" alt="">  </p>
+<p>　　点击复制链接就会跳出来下载的地址了，复制后可以在迅雷里面新建任务，我用的是猎鹰下载器，不用登陆，而且简约，重要的是软件很小，缺点是无法下载torrent文件，而且如果网盘勾选文件夹的话会自动下载压缩文件  </p>
+<p><img src="http://i.imgur.com/p0JotqF.png" alt="">  </p>
+<p><img src="http://i.imgur.com/tNhJtVA.png" alt="">  </p>
+<p><img src="http://i.imgur.com/ZmTBYQQ.png" alt="">  </p>
+<p>　　最后一张图就可以看到，很快的下载速度，猎鹰自己搜索下载就可以了，我是在360软件管家里直接下载的，我觉得软件管家现在挺好的，一些冷门软件以及开发软件都有收录。  </p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>　　当然你们有更好的方式可以不用参照，比方说破解版，我是不想下载一个软件占地方，而且觉得破解版有时没有下载器下载快，还有就是之前破解版有的过一段时间就没发用了，所以就没搞，如果想要破解版可以自己寻找，我下面放的外链里面也有的，你们自己看下吧。  </p>
+<blockquote>
+<p>友情链接  </p>
+</blockquote>
+<p>　　<a href="http://tengj.top/2017/04/24/bdyzs/" target="_blank" rel="external">精品软件推荐—百度云另外一种破解限速的方式&lt;提取资源下载地址&gt;</a><br>　　<a href="http://blog.csdn.net/weixin_36171533/article/details/72898711" target="_blank" rel="external">[油猴Tampermonkey] 脚本安装教程+自用脚本推荐</a><br>　　<a href="https://www.52pojie.cn/thread-614101-1-1.html" target="_blank" rel="external">[教程、无技术含量] 简单的油猴脚本编写教程</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。&lt;br&gt;　　本来是不打算写的记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Tampermonkey" scheme="https://dorashock.github.io/tags/Tampermonkey/"/>
+    
+      <category term="百度云" scheme="https://dorashock.github.io/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/"/>
+    
+      <category term="插件" scheme="https://dorashock.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo主题yilia配置和畅言评论配置</title>
