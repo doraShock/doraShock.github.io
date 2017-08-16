@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-08-16T02:28:33.581Z</updated>
+  <updated>2017-08-16T02:32:54.613Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/"/>
     <id>https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/</id>
     <published>2017-08-15T08:45:26.000Z</published>
-    <updated>2017-08-16T02:28:33.581Z</updated>
+    <updated>2017-08-16T02:32:54.613Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。<br>　　本来是不打算写的记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。</p>
 <a id="more"></a>
@@ -66,7 +66,7 @@ vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349
 <p><img src="http://i.imgur.com/tNhJtVA.png" alt="">  </p>
 <p><img src="http://i.imgur.com/ZmTBYQQ.png" alt="">  </p>
 <p>　　最后一张图就可以看到，很快的下载速度，猎鹰自己搜索下载就可以了，我是在360软件管家里直接下载的，我觉得软件管家现在挺好的，一些冷门软件以及开发软件都有收录。  </p>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>　　当然你们有更好的方式可以不用参照，比方说破解版，我是不想下载一个软件占地方，而且觉得破解版有时没有下载器下载快，还有就是之前破解版有的过一段时间就没发用了，所以就没搞，如果想要破解版可以自己寻找，我下面放的外链里面也有的，你们自己看下吧。  </p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>　　当然你们有更好的方式可以不用参照，比方说破解版，我是不想下载一个软件占地方，而且觉得破解版有时没有下载器下载快，还有就是之前破解版有的过一段时间就没法用了，所以就没搞，如果想要破解版可以自己寻找，我下面放的外链里面也有的，你们自己看下吧。  </p>
 <blockquote>
 <p>友情链接  </p>
 </blockquote>
@@ -362,11 +362,11 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
-    
       <category term="yilia" scheme="https://dorashock.github.io/tags/yilia/"/>
     
       <category term="畅言" scheme="https://dorashock.github.io/tags/%E7%95%85%E8%A8%80/"/>
+    
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   
@@ -487,9 +487,9 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
-      <category term="github" scheme="https://dorashock.github.io/tags/github/"/>
-    
       <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
+    
+      <category term="github" scheme="https://dorashock.github.io/tags/github/"/>
     
   </entry>
   
