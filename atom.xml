@@ -85,13 +85,13 @@ ps -ef | grep nginx                       #查看启动的Nginx目录
     <link href="https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/"/>
     <id>https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/</id>
     <published>2017-08-15T08:45:26.000Z</published>
-    <updated>2017-08-16T07:25:49.913Z</updated>
+    <updated>2017-08-17T01:28:54.933Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。<br>　　本来是不打算写的记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。</p>
 <a id="more"></a>
 <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>　　Tampermonkey支持多个浏览器，主流浏览器都可以使用，底层我也没去了解，做web编程的应该大致了解就是加了一些JavaScript语言，精通的人也可以自己研究编写脚本。<br>　　之前百度网盘分享的文件是可以不论大小使用下载器直接下载的，首先要准备两个百度账号，使用一个关注另外一个，找到要下载的文件保存到自己的网盘，然后分享，登陆另外一个账号到分享动态直接点击下载没有大文件显示，并且可以用下载器如下图  </p>
 <p><img src="http://i.imgur.com/IRNJChL.png" alt="">  </p>
-<p>　　所以说如果是这样的话有前端开发经验的人看看代码就可以直接下载自己想要的东西了，一个是我太懒，第二个切换账号也不方便，然后就找到了本篇的方法。<br>　　软件安装很简单，本教程以360安全浏览器为例，下面是个浏览器下载地址：  </p>
+<p>　　所以说如果是这样的话有前端开发经验的人看看代码就可以直接下载自己想要的东西了，一个是我太懒，第二个切换账号也不方便，然后就找到了本篇的方法。<br>　　软件安装很简单，本教程以360安全浏览器为例，下面是各个浏览器下载地址：  </p>
 <pre><code>常用浏览器安装：
 搜狗浏览器：      http://ie.sogou.com/app/search/Tampermonkey
 360安全浏览器：   https://ext.se.360.cn/webstore/search/tampermonkey
@@ -118,7 +118,7 @@ ps -ef | grep nginx                       #查看启动的Nginx目录
 vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349
 网页强制复制：https://greasyfork.org/zh-CN/scripts/218
 网盘提取工具：https://greasyfork.org/zh-CN/scripts/18733
-</code></pre><p>　　我使用的就是网盘提取工具和下载地址解析，可以不用输提取码，直接解析地址添加到下载器中下载，安卓方法如下，打开网盘解析的下载地址，点击安装此脚本  </p>
+</code></pre><p>　　我使用的就是网盘提取工具和下载地址解析，可以不用输提取码，直接解析地址添加到下载器中下载，安装方法如下，打开网盘解析的下载地址，点击安装此脚本  </p>
 <p><img src="http://i.imgur.com/bEnESY8.png" alt="">  </p>
 <p>　　跳转后选择安装，然后页面自动关闭，这样就安装完成了  </p>
 <p><img src="http://i.imgur.com/KGeXrEn.png" alt="">  </p>
