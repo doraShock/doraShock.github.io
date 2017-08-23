@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-08-17T00:35:52.901Z</updated>
+  <updated>2017-08-23T01:45:25.881Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/"/>
     <id>https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/</id>
     <published>2017-08-16T09:46:26.000Z</published>
-    <updated>2017-08-17T00:35:52.901Z</updated>
+    <updated>2017-08-23T01:45:25.881Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。<br><a id="more"></a></p>
 <blockquote>
@@ -61,7 +61,35 @@ kill -9 pid                               #如果有，用kill;pid 为相应的�
 ./nginx -s reopen                         #重新打开日志文件
 ./nginx -t -c /path/to/nginx.conf         #测试Nginx配置文件是否正确
 ps -ef | grep nginx                       #查看启动的Nginx目录
-</code></pre>]]></content>
+</code></pre><h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><h3 id="2017年8月23日"><a href="#2017年8月23日" class="headerlink" title="2017年8月23日"></a>2017年8月23日</h3><p>　　今天在部署项目的时候，项目里的tcp连接连接不上，查找之后发现是防火墙没有开放端口，记录linux防火墙相关命令：</p>
+<pre><code>telnet ip port                            #检测远程端口是否通畅（Windows适用）
+service iptables stop                     #关闭防火墙
+service iptables start                    #启动防火墙
+service iptables restart                  #重启防火墙
+service iptables status                   #查看防火墙状态
+    -A                                    #在指定链的末尾添加（append）一条新的规则
+    -D                                    #删除（delete）指定链中的某一条规则，可以按规则序号和内容删除
+    -I                                    #在指定链中插入（insert）一条新的规则，默认在第一行添加
+    -R                                    #修改、替换（replace）指定链中的某一条规则，可以按规则序号和内容替换
+    -L                                    #列出（list）指定链中所有的规则进行查看
+    -E                                    #重命名用户定义的链，不改变链本身
+    -F                                    #清空（flush）
+    -N                                    #新建（new-chain）一条用户自己定义的规则链
+    -X                                    #删除指定表中用户自定义的规则链（delete-chain）
+    -P                                    #设置指定链的默认策略（policy）
+    -Z                                       #将所有表的所有链的字节和数据包计数器清零
+    -n                                    #使用数字形式（numeric）显示输出结果
+    -v                                    #查看规则表详细信息（verbose）的信息
+    -V                                    #查看版本(version)
+    -h                                    #获取帮助（help）
+</code></pre><p>　　针对固定ip开放端口，编辑/etc/sysconfig/iptables，添加</p>
+<pre><code>-A INPUT -m state --state NEW -m tcp -p tcp -s 127.0.0.1 --dport 6379 -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp -s 126.212.173.185 --dport 6379 -j ACCEPT
+</code></pre><p>　　查看iptables状态是提示 iptables：unrecognized service，则需要安装（保证联网状态）。  </p>
+<pre><code>apt-get install iptables  //Debian,Ubuntu使用此命令
+yum install iptables   //Linux,CentOS使用此命令
+</code></pre><p>　　</p>
+]]></content>
     
     <summary type="html">
     
