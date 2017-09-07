@@ -468,7 +468,7 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     <link href="https://dorashock.github.io/2017/07/31/hexo-and-github-blog/"/>
     <id>https://dorashock.github.io/2017/07/31/hexo-and-github-blog/</id>
     <published>2017-07-31T06:45:58.000Z</published>
-    <updated>2017-09-07T05:16:15.007Z</updated>
+    <updated>2017-09-07T05:18:26.863Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。 </p>
 <a id="more"></a>
@@ -567,7 +567,7 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
 #这里是正文，用markdown写
 &lt;!--more--&gt; //之前的内容会显示在首页，之后的内容会隐藏，当游客点击打开才能看到。
 </code></pre><h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>　　这样就可以写下自己的经验了，给别人参考也好，自己查阅方便也罢，最主要可以用来装B，哈哈，开个玩笑；在这里非常感谢嘟嘟大神，我是看着他的博客搭建起来的，其中还有添加搜索，国内上传到coding访问更快更方便，主题优化，还有百度认证，访问统计等功能，附上链接 <a href="http://tengj.top/categories/hexo干货系列/" target="_blank" rel="external">http://tengj.top/categories/hexo干货系列/</a>，我写的跟他差不多，就是补充了点地方，还有就是版本的不同地方，其它的我就不重新写了，看了可以参考他的，写的非常详细，还有我第一篇文章提到的电子书就是找他的，他博客有写，有兴趣可以联系他，我下章把搞得Yilia主题说下就不重复了。第一篇技术文，如有不足，多多指教。</p>
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>　　在网上找到MarkdownPad2.5 注册码，记录一下：<br>　　邮箱：Soar360@live.com<br>　　授权秘钥：GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==<br>　　作者：xwch<br>　　链接：<a href="http://www.jianshu.com/p/9e5cd946696d" target="_blank" rel="external">http://www.jianshu.com/p/9e5cd946696d</a>  </p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>　　在网上找到MarkdownPad2.5 注册码，记录一下：<br>    邮箱：Soar360@live.com<br>    授权秘钥：GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==<br>　　作者：xwch<br>　　链接：<a href="http://www.jianshu.com/p/9e5cd946696d" target="_blank" rel="external">http://www.jianshu.com/p/9e5cd946696d</a>  </p>
 ]]></content>
     
     <summary type="html">
