@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-09-12T01:56:30.461Z</updated>
+  <updated>2017-09-12T09:16:45.337Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -16,13 +16,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Bootstarp 3 Typeahead —— Bootstarp输入框自动补全插件</title>
+    <link href="https://dorashock.github.io/2017/09/12/Bootstarp-3-Typeahead/"/>
+    <id>https://dorashock.github.io/2017/09/12/Bootstarp-3-Typeahead/</id>
+    <published>2017-09-12T09:14:25.000Z</published>
+    <updated>2017-09-12T09:16:45.337Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="web" scheme="https://dorashock.github.io/tags/web/"/>
+    
+      <category term="UI" scheme="https://dorashock.github.io/tags/UI/"/>
+    
+      <category term="plugin" scheme="https://dorashock.github.io/tags/plugin/"/>
+    
+      <category term="Bootstarp" scheme="https://dorashock.github.io/tags/Bootstarp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux常用命令</title>
     <link href="https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/"/>
     <id>https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/</id>
     <published>2017-08-16T09:46:26.000Z</published>
-    <updated>2017-09-12T01:56:30.461Z</updated>
+    <updated>2017-09-12T09:21:54.225Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。  </p>
+<a id="more"></a>
 <blockquote>
 <p>Linux相关</p>
 </blockquote>
@@ -100,7 +125,7 @@ yum install iptables   //Linux,CentOS使用此命令
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。&lt;br&gt;
+      &lt;p&gt;　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。  &lt;/p&gt;
     
     </summary>
     
@@ -120,9 +145,9 @@ yum install iptables   //Linux,CentOS使用此命令
     <link href="https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/"/>
     <id>https://dorashock.github.io/2017/08/15/Instructions-for-Tampermonkey/</id>
     <published>2017-08-15T08:45:26.000Z</published>
-    <updated>2017-08-17T01:28:56.000Z</updated>
+    <updated>2017-09-12T09:22:20.809Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。<br>　　本来是不打算写的记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。</p>
+    <content type="html"><![CDATA[<p>　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。一开始不打算自己记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。  </p>
 <a id="more"></a>
 <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>　　Tampermonkey支持多个浏览器，主流浏览器都可以使用，底层我也没去了解，做web编程的应该大致了解就是加了一些JavaScript语言，精通的人也可以自己研究编写脚本。<br>　　之前百度网盘分享的文件是可以不论大小使用下载器直接下载的，首先要准备两个百度账号，使用一个关注另外一个，找到要下载的文件保存到自己的网盘，然后分享，登陆另外一个账号到分享动态直接点击下载没有大文件显示，并且可以用下载器如下图  </p>
 <p><img src="http://i.imgur.com/IRNJChL.png" alt="">  </p>
@@ -175,7 +200,7 @@ vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。&lt;br&gt;　　本来是不打算写的记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。&lt;/p&gt;
+      &lt;p&gt;　　本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。一开始不打算自己记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是百度云解析下载地址，还有其他的方法也很简单好用，下面会介绍怎么查看。  &lt;/p&gt;
     
     </summary>
     
@@ -195,9 +220,9 @@ vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349
     <link href="https://dorashock.github.io/2017/08/11/hexo-theme-litten/"/>
     <id>https://dorashock.github.io/2017/08/11/hexo-theme-litten/</id>
     <published>2017-08-11T05:57:12.000Z</published>
-    <updated>2017-08-16T09:44:10.000Z</updated>
+    <updated>2017-09-12T09:22:28.545Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　上一篇博客讲了hexo的安装以及提交到GitHub访问，本来想早点写这个主题配置的博客，但是新人写博客真的很耗时间，上篇博客就写了好久，加上工作等原因，也就一直没有写，今天觉得还是写出来吧，了了我一桩心事，而且既然做博客的话就做的认真一点。<br>　　hexo的主题还是非常的丰富的，可以直接百度，我在知乎上看到回答的<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有哪些好看的Hexo主题</a>，点击进去看别人推荐就好了，而且有的直接贴图，并且带了链接，没有的话也可以直接百度喜欢的主题进行查看，有基础的话也可以自己写主题哦。我用的主题是yilia，今天主要讲的就是这个主题的配置。</p>
+    <content type="html"><![CDATA[<p>　　上一篇博客讲了hexo的安装以及提交到GitHub访问，本来想早点写这个主题配置的博客，但是新人写博客真的很耗时间，上篇博客就写了好久，加上工作等原因，也就一直没有写，今天觉得还是写出来吧，了了我一桩心事，而且既然做博客的话就做的认真一点。<br>　　hexo的主题还是非常的丰富的，可以直接百度，我在知乎上看到回答的<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">有哪些好看的Hexo主题</a>，点击进去看别人推荐就好了，而且有的直接贴图，并且带了链接，没有的话也可以直接百度喜欢的主题进行查看，有基础的话也可以自己写主题哦。我用的主题是yilia，今天主要讲的就是这个主题的配置。  </p>
 <a id="more"></a>
 <h2 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h2><p>　　每个人喜欢的东西不一样，这个主题也有很多人在用，我比较喜欢简约，没有太多的栏目，并且带点小特效，于是就选择了这个主题。<br>　　首先访问yilia主题的主页，作者是放在GitHub上面的：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a>。下载下来以后就可以放到hexo文件夹下面的themes主题文件夹下面，然后在hexo的配置文件_config.yml中修改theme为yilia，然后整个配置文件我会贴在下面，并且加上注释。  </p>
 <pre><code># Hexo Configuration
@@ -453,7 +478,7 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　上一篇博客讲了hexo的安装以及提交到GitHub访问，本来想早点写这个主题配置的博客，但是新人写博客真的很耗时间，上篇博客就写了好久，加上工作等原因，也就一直没有写，今天觉得还是写出来吧，了了我一桩心事，而且既然做博客的话就做的认真一点。&lt;br&gt;　　hexo的主题还是非常的丰富的，可以直接百度，我在知乎上看到回答的&lt;a href=&quot;https://www.zhihu.com/question/24422335&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;有哪些好看的Hexo主题&lt;/a&gt;，点击进去看别人推荐就好了，而且有的直接贴图，并且带了链接，没有的话也可以直接百度喜欢的主题进行查看，有基础的话也可以自己写主题哦。我用的主题是yilia，今天主要讲的就是这个主题的配置。&lt;/p&gt;
+      &lt;p&gt;　　上一篇博客讲了hexo的安装以及提交到GitHub访问，本来想早点写这个主题配置的博客，但是新人写博客真的很耗时间，上篇博客就写了好久，加上工作等原因，也就一直没有写，今天觉得还是写出来吧，了了我一桩心事，而且既然做博客的话就做的认真一点。&lt;br&gt;　　hexo的主题还是非常的丰富的，可以直接百度，我在知乎上看到回答的&lt;a href=&quot;https://www.zhihu.com/question/24422335&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;有哪些好看的Hexo主题&lt;/a&gt;，点击进去看别人推荐就好了，而且有的直接贴图，并且带了链接，没有的话也可以直接百度喜欢的主题进行查看，有基础的话也可以自己写主题哦。我用的主题是yilia，今天主要讲的就是这个主题的配置。  &lt;/p&gt;
     
     </summary>
     
@@ -475,9 +500,9 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     <link href="https://dorashock.github.io/2017/07/31/hexo-and-github-blog/"/>
     <id>https://dorashock.github.io/2017/07/31/hexo-and-github-blog/</id>
     <published>2017-07-31T06:45:58.000Z</published>
-    <updated>2017-09-07T05:20:05.705Z</updated>
+    <updated>2017-09-12T09:22:38.705Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。 </p>
+    <content type="html"><![CDATA[<p>　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。 </p>
 <a id="more"></a>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　我个人是win10的操作系统，安装的是Hexo3的版本</p>
 <blockquote>
@@ -582,7 +607,7 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。 &lt;/p&gt;
+      &lt;p&gt;　　一直以来就想搞个属于自己的博客，但是自己写需要花时间花心思，还得搞个域名和服务器，写在论坛上面又没特色，就一直没有实施，最近看到Hexo+GitHub建立静态博客不仅不需要域名，而且可以设置各种好看的样式，更换起来也很方便，也不需要有代码的基础，瞬间就心动了。花了点功夫，参考了别人的最后还是弄出来，遇到的问题有版本原因，也有个人原因，在这里写个总结，自己下次可以参考，别人也可以参考。可能没耐心的人看起来很繁琐，就不想弄了，但是相信我，你只要试试，非常的简单。 &lt;/p&gt;
     
     </summary>
     
@@ -602,10 +627,9 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     <link href="https://dorashock.github.io/2017/07/27/my-first-blog/"/>
     <id>https://dorashock.github.io/2017/07/27/my-first-blog/</id>
     <published>2017-07-27T01:59:40.000Z</published>
-    <updated>2017-07-31T08:14:16.000Z</updated>
+    <updated>2017-09-12T09:22:11.073Z</updated>
     
-    <content type="html"><![CDATA[<p><br></p>
-<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>　　琢磨了好久，终于把博客弄出来了，过程中学了不少东西，毕竟还只是个菜鸟，可以学的东西很多；本来打算的是第一章把使用hexo搭建博客的步骤以及遇到的问题写一下，但是弄好之后莫名奇妙的想把之前的生活做个总结；或许觉得搭起属于自己的博客之后，就是一个新的人生吧……  </p>
+    <content type="html"><![CDATA[<p>　　琢磨了好久，终于把博客弄出来了，过程中学了不少东西，毕竟还只是个菜鸟，可以学的东西很多；本来打算的是第一章把使用hexo搭建博客的步骤以及遇到的问题写一下，但是弄好之后莫名奇妙的想把之前的生活做个总结；或许觉得搭起属于自己的博客之后，就是一个新的人生吧……  </p>
 <a id="more"></a>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　时间走得很快，转眼间就两年了。两年的时间在这个行业算是有个起点了，遇到的人也不多，见识的人也不算少，和同资历的人进行比较，比之强则幸，比之弱则叹，庆幸自己的性格，在比强的时候并不气馁，在比弱的时候也不骄傲，三人行必有师，学习别人的长处；不慌不忙，走着自己的路，规划自己的人生。<br>　　由于种种原因本人大学匆忙选择了软件工程专业，在我的认知当中编程就是记忆并编写长篇自己不熟悉的语言，这肯定不是我这种连背书都不会的人生存的方式，更不用提自己高中基本刚过及格线的英语水平了，于是在开学之初就肯定的说，毕业后绝对不会去做程序员的。其实也不是因为兴趣，大学的生活被我玩了过去，从来没有什么知识点进入我的脑海，就这样混到大三，在各种渠道到中嗅到了程序员高薪的气息，最终让我踏入程序员的行列。<br>　　当时选择Java是因为入门快，有次Java的实验周程序是我自己瞎搞的，给自己的思维注入了点东西，入门也不是很费劲了。后来正式的工作是在扬州，因为在那上的大学，想先积累点经验再去大城市闯荡，也没太强求工资，能学到东西就好。我觉得我还是受到上天的眷顾的，工作学习的过程顺理成章，同时因为有点小机灵，所以基础打的很快，上手的也很快。第一家公司压力很大，或许我见识的少，但是也给我的心理做了一个铺垫，估么着以后遇到什么样的公司都不会有问题了，于是也就安安心心的在里面工作，安安心心的在半年以后独立开发项目，安安心心的手里带新人，不怎么安心的离了职；离职的问题后面说，先总览。<br>　　2017年三月来到了上海，进行茫茫的简历投递，学习了简历的写法，也面试了几个公司，报的两年经验还是不好找，最终找到了一家感觉不错的公司，工资也不算很高，但是比之前翻一番了，也足够生活，而且在找工作过程中知道了自己见识的不足之处，觉得再蛰伏一年努力学习，争取补上大学时候浪费的青春。到了新的公司，环境还是很满意的，工作内容简单，比上一个公司好了很多，朝九晚六，慢慢的我也有点懈怠，主要公司技术足够，我想等着别人来教我；事实证明人是不可以懒惰的，在和上个公司轻松很多的环境下，我可以学习的时间更多，还是把人生交给自己吧，依靠别人的想法就不对。<br>　　在网上浏览，没事的时候没目的的瞎看，有天在找spring boot的时候看到了hexo的搭建方法，博主还有一个图书推荐的文章，唤起了我的血气，给了二十块钱博主的辛苦费就拿到了几百本电子书，同时按照博主文章搭起自己的博客，开始自己的学习记录之旅，博客搭建过程也是遇到了点问题，在下一章会进行记录，然后把之前的内容做个总结，接着就啃自己的干货吧，因为没有系统性，所以打算从零看起，知道的当做巩固，不知道的正好学习。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>　　我很早以前就喜欢写东西，初中的时候刚看的网络小说也想自己写，高中的时候为了迎合高考全部都是以议论文为主，说实话，我并不是很明白议论文的亮点，我也尝试着去迎合，但不是很理想。<br>　　我觉得一篇文章，只有精彩的故事才能吸引读者，包括儿时的想想作文，后来的网络小说；这里我还是有点感谢高三的语文老师，他教会了我这叫记叙文，并且没有像别的老师那样主张议论文，同时开放了我的思维，于是我就是以写记叙文为主，虽然文笔一般，但是我有活跃的思想，有好多次的作文都会被老师点名，说我想法很好，哈哈。<br>　　印象里最深的就是高二的时候看完斗罗大陆，月考的时候作文名字叫《禁区》，我因为小说的影响，天马行空般的把盘古写成一个力气很大的孩子，以他父亲的视角，描述了森林深处一个贫瘠的小村因为传说的影响不敢踏出外层模糊光罩的背景，将死之人方可从桥上踏出，他临终时候出来看到外面物产的丰富，以小儿子盘古的懵懂和对父亲的不舍追出打破光罩结束，从而拿到了六十五分的高分，满分是七十分。<br>　　这样的分数有人可能觉得没什么，我这有告诉你吧，江苏考生作文七十分，普通人四十到五十分，五十五分就算高分；我也因此语文成绩破了两位数，就这也不到一百三十分，因为我语文也很烂。后来就没有那样的情况了，但是我对自己的写作能力还是比较自信的，虽然分数不高，但是内容足够吸引住别人，可惜到了大学什么都抛弃了，更气的是我们学校补考不要钱，这不是逼我补考吗；现在没事写写，以后说不定有钱拿。<br>　　上一家公司的事情说下，我觉得我不说兢兢业业，但是也帮助公司渡过很多难关，而且在旧环境中学习新知识都会拿出来共享的，但是最后公司让我这样收场，谢谢你给我学习的机会，丰富了我的人生经历。具体的内容不谈了，人总要向前看，我没错，我不后悔，再给我一次机会，我只会做的让你更难看，而不是改变我的选择。</p>
@@ -614,8 +638,7 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     
     <summary type="html">
     
-      &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;　　琢磨了好久，终于把博客弄出来了，过程中学了不少东西，毕竟还只是个菜鸟，可以学的东西很多；本来打算的是第一章把使用hexo搭建博客的步骤以及遇到的问题写一下，但是弄好之后莫名奇妙的想把之前的生活做个总结；或许觉得搭起属于自己的博客之后，就是一个新的人生吧……  &lt;/p&gt;
+      &lt;p&gt;　　琢磨了好久，终于把博客弄出来了，过程中学了不少东西，毕竟还只是个菜鸟，可以学的东西很多；本来打算的是第一章把使用hexo搭建博客的步骤以及遇到的问题写一下，但是弄好之后莫名奇妙的想把之前的生活做个总结；或许觉得搭起属于自己的博客之后，就是一个新的人生吧……  &lt;/p&gt;
     
     </summary>
     
