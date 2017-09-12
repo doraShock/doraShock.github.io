@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://dorashock.github.io">
   <title>Bootstarp 3 Typeahead —— Bootstarp输入框自动补全插件 | Shock.Le</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小小程序员~">
-<meta name="keywords" content="web,UI,plugin,Bootstarp">
+  <meta name="description" content="在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式">
+<meta name="keywords" content="web,UI,plugin,Bootstarp,Typeahead">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bootstarp 3 Typeahead —— Bootstarp输入框自动补全插件">
 <meta property="og:url" content="https://dorashock.github.io/2017/09/12/Bootstarp-3-Typeahead/index.html">
 <meta property="og:site_name" content="Shock.Le">
-<meta property="og:description" content="小小程序员~">
+<meta property="og:description" content="在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-12T09:16:45.337Z">
+<meta property="og:updated_time" content="2017-09-12T10:10:18.371Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bootstarp 3 Typeahead —— Bootstarp输入框自动补全插件">
-<meta name="twitter:description" content="小小程序员~">
+<meta name="twitter:description" content="在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式">
   
     <link rel="alternative" href="/atom.xml" title="Shock.Le" type="application/atom+xml">
   
@@ -183,7 +183,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>　　在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式就没办法很好的展现了。  </p>
+<a id="more"></a>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　Typeahead插件开放了几个方法，进行重写覆盖之后就可以实现对应功能了，链接在底部，我看着思路是对的，但是按照对应方法去实现的时候总是补全不了，不知道是我什么地方搞错了，比较崩溃，前后搞了很久，后来还是没有实现，再找其它思路的时候找到了原来api并没有进行更新，或许是别人进行了修改吧，我也不知道是不是bootstrap官方的GitHub，但是下载最新的Typeahead改写了原有的process方法，传json的话对应id和name字段就可以直接解析了，示例如下：</p>
+<pre><code> $(&quot;#id&quot;).typeahead({
+    source: function (query, process) {
+        var json=[];
+        $.ajax({
+            url: &quot;&quot;,
+            type: &quot;post&quot;,
+            data: {
+                userType: $(&quot;#pay_user_type&quot;).val(),
+                query:query                
+            },
+            dataType: &quot;json&quot;,
+            async: false ,
+            success: function (data) {
+                json = data.records;
+            }
+        });
+        return process(json);
+    },
+    updater: function (obj) {
+        return obj.name;
+    }
+});
+</code></pre><p>　　直接source定义数据源就可以了，如果是ajax的话实现范围就广泛很多了，有两个参数，query是输入内容，传输的话可以优化搜索，不传也没事，返回前端的数据该插件有匹配函数，process则是解析函数，解析成差劲可以识别的数据源，updater方法是点击事件，返回值是显示在输入框中的数据，我这边是在里面把点击数据的id保存到页面的隐藏输入框中操作在里面，所以重写了一下，如果有匹配内容修改的话也可以在这里返回。其它方法我就不介绍了底部附上链接，需要的可以自己查看，这两个方法已经满足我的需求实现了。  </p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>　　【Bootstrap】 typeahead自动补全：<a href="http://www.cnblogs.com/shiyu404/p/6344591.html" target="_blank" rel="external">http://www.cnblogs.com/shiyu404/p/6344591.html</a><br>　　Bootstrap 3 Typeahead：<a href="https://github.com/bassjobsen/Bootstrap-3-Typeahead" target="_blank" rel="external">https://github.com/bassjobsen/Bootstrap-3-Typeahead</a></p>
+
       
 
       
@@ -230,6 +257,10 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Bootstarp</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Typeahead</a>
         		</li>
       		
 		</ul>
@@ -339,7 +370,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">1.</span> <span class="toc-text">正文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接"><span class="toc-number">2.</span> <span class="toc-text">链接</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -470,6 +501,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Typeahead</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
@@ -499,18 +546,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">畅言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">插件</a>
               </li>
              
               <li class="article-tag-list-item">
