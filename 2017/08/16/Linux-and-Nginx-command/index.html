@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Shock.Le">
 <meta property="og:description" content="前言　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-23T01:55:38.000Z">
+<meta property="og:updated_time" content="2017-09-12T01:56:30.461Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
 <meta name="twitter:description" content="前言　　在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。">
@@ -222,6 +222,13 @@ kill -9 pid                               #如果有，用kill;pid 为相应的�
 ./nginx -s reopen                         #重新打开日志文件
 ./nginx -t -c /path/to/nginx.conf         #测试Nginx配置文件是否正确
 ps -ef | grep nginx                       #查看启动的Nginx目录
+</code></pre><blockquote>
+<p>maven相关</p>
+</blockquote>
+<pre><code>这些是在window上的命令，有些包网上没有，或者下载不下来的时候，有时候用baseurl打包不了，可以导入本地maven库，坏处是别人本地也要导入，不然引用不到
+${basedir}                               #在pom中jar路径前加，表示项目根目录,即包含pom.xml文件的目录，同${project.basedir}
+手动添加jar包到本地仓库：
+mvn install:install-file -Dfile=jar包的位置 -DgroupId=上面的groupId -DartifactId=上面的artifactId -Dversion=上面的version -Dpackaging=jar
 </code></pre><h3 id="2017年8月23日"><a href="#2017年8月23日" class="headerlink" title="2017年8月23日"></a>2017年8月23日</h3><p>　　今天在部署项目的时候，项目里的tcp连接连接不上，查找之后发现是防火墙没有开放端口，记录linux防火墙相关命令：</p>
 <pre><code>telnet ip port                            #检测远程端口是否通畅（Windows适用）
 service iptables stop                     #关闭防火墙
@@ -549,14 +556,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">人生</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
               </li>
              
@@ -566,6 +565,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">人生</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感悟</a>
               </li>
             
             <div class="clearfix"></div>
