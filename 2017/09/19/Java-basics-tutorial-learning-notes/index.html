@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dorashock.github.io">
-  <title>Category: 文章 | Shock.Le</title>
+  <title>Java基础教程学习记录 | Shock.Le</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小小程序员~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shock.Le">
-<meta property="og:url" content="https://dorashock.github.io/categories/文章/index.html">
+  <meta name="description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。">
+<meta name="keywords" content="Java,基础,note">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础教程学习记录">
+<meta property="og:url" content="https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/index.html">
 <meta property="og:site_name" content="Shock.Le">
-<meta property="og:description" content="小小程序员~">
+<meta property="og:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-19T09:52:25.687Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shock.Le">
-<meta name="twitter:description" content="小小程序员~">
+<meta name="twitter:title" content="Java基础教程学习记录">
+<meta name="twitter:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。">
   
     <link rel="alternative" href="/atom.xml" title="Shock.Le" type="application/atom+xml">
   
@@ -161,75 +163,222 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Java-basics-tutorial-learning-notes" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/27/my-first-blog/" class="archive-article-date">
-  	<time datetime="2017-07-27T01:59:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/27/my-first-blog/">我的博客</a>
+    <h1 class="article-title" itemprop="name">
+      Java基础教程学习记录
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/09/19/Java-basics-tutorial-learning-notes/" class="archive-article-date">
+  	<time datetime="2017-09-19T09:00:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。</p>
+<a id="more"></a>
+<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>　　二进制补码：Java中用补码的方式来表示负数，也就是把一个正数转化成二级制然后按位取反（0变成1,1变成0），然后把结果加1。比如42的二级制是00101010，按位取反是11010101，加1后得到11010110，表示的就是-42。如果解码负数一样是把二进制按位取反后加1，-42的二级制表示11010110按位取反是00101001,转换成十进制就是41，然后加1就得到42。考虑到零的交叉（zero crossing）问题，们规定，-0和0的表示方法一样。  </p>
+<h4 id="按位非（NOT）"><a href="#按位非（NOT）" class="headerlink" title="按位非（NOT）"></a>按位非（NOT）</h4><p>　　按位非也叫做补，一元运算符NOT“~”是对其运算数的每一位取反。<br>　　例如，数字42，它的二进制代码为：00101010<br>　　经过按位非运算成为：11010101，转化成十进制就是-41。  </p>
+<h4 id="按位与（AND）"><a href="#按位与（AND）" class="headerlink" title="按位与（AND）"></a>按位与（AND）</h4><p>　　按位与运算符“&amp;”，把两个数转化成二级制按位计算，如果两个运算数都是1，则结果为1，其他情况下，结果均为零。看下面的例子：  </p>
+<pre><code>   0 0 1 0 1 0 1 0     42
+ &amp; 0 0 0 0 1 1 1 1     15
+---------------------------
+   0 0 0 0 1 0 1 0     10
+</code></pre><p>　　即用Java计算42&amp;15的结果就是10。  </p>
+<h4 id="按位或（OR）"><a href="#按位或（OR）" class="headerlink" title="按位或（OR）"></a>按位或（OR）</h4><p>　　按位或运算符“|”，把两个数转化成二级制按位计算，有一个运算数是1，则结果为1。如下面的例子所示：  </p>
+<pre><code>   0 0 1 0 1 0 1 0    42
+ | 0 0 0 0 1 1 1 1    15 
+--------------------------
+   0 0 1 0 1 1 1 1    47
+</code></pre><p>　　即用Java计算42|15的结果就是47。  </p>
+<h4 id="按位异或（XOR）"><a href="#按位异或（XOR）" class="headerlink" title="按位异或（XOR）"></a>按位异或（XOR）</h4><p>　　</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢老板的打赏~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">人生</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">感悟</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">note</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/文章/" class="article-tag-list-link color3">文章</a>
+        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/09/12/Bootstarp-3-Typeahead/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Bootstarp 3 Typeahead —— Bootstarp输入框自动补全插件</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算符"><span class="toc-number">1.</span> <span class="toc-text">位运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#按位非（NOT）"><span class="toc-number">1.1.</span> <span class="toc-text">按位非（NOT）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位与（AND）"><span class="toc-number">1.2.</span> <span class="toc-text">按位与（AND）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位或（OR）"><span class="toc-number">1.3.</span> <span class="toc-text">按位或（OR）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位异或（XOR）"><span class="toc-number">1.4.</span> <span class="toc-text">按位异或（XOR）</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="Java-basics-tutorial-learning-notes" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cyt8pWV7m"; 
+var conf = "f540d75f8bd3512af5e1b0ef7b02cea1"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+  
+
+  
 
 
           </div>
@@ -252,10 +401,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
