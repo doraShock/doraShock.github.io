@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/</loc>
+    <lastmod>2017-09-19T03:23:54.533Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用命令</title>
+        <pubTime>2017-08-16T09:46:26.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Tomcat</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dorashock.github.io/2017/09/12/Bootstarp-3-Typeahead/</loc>
     <lastmod>2017-09-12T10:10:18.371Z</lastmod>
     <data>
@@ -121,30 +145,6 @@
            
              
               <breadCrumb title="文章" url="https://dorashock.github.io/categories/%E6%96%87%E7%AB%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://dorashock.github.io/2017/08/16/Linux-and-Nginx-command/</loc>
-    <lastmod>2017-09-12T09:21:54.225Z</lastmod>
-    <data>
-        <display>
-        <title>Linux常用命令</title>
-        <pubTime>2017-08-16T09:46:26.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Tomcat</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
