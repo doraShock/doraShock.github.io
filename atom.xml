@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-09-19T09:52:25.687Z</updated>
+  <updated>2017-09-20T04:06:12.702Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/"/>
     <id>https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/</id>
     <published>2017-09-19T09:00:33.000Z</published>
-    <updated>2017-09-19T09:52:25.687Z</updated>
+    <updated>2017-09-20T04:06:12.702Z</updated>
     
     <content type="html"><![CDATA[<p>　　由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。</p>
 <a id="more"></a>
 <h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>　　二进制补码：Java中用补码的方式来表示负数，也就是把一个正数转化成二级制然后按位取反（0变成1,1变成0），然后把结果加1。比如42的二级制是00101010，按位取反是11010101，加1后得到11010110，表示的就是-42。如果解码负数一样是把二进制按位取反后加1，-42的二级制表示11010110按位取反是00101001,转换成十进制就是41，然后加1就得到42。考虑到零的交叉（zero crossing）问题，们规定，-0和0的表示方法一样。  </p>
 <h4 id="按位非（NOT）"><a href="#按位非（NOT）" class="headerlink" title="按位非（NOT）"></a>按位非（NOT）</h4><p>　　按位非也叫做补，一元运算符NOT“~”是对其运算数的每一位取反。<br>　　例如，数字42，它的二进制代码为：00101010<br>　　经过按位非运算成为：11010101，转化成十进制就是-41。  </p>
-<h4 id="按位与（AND）"><a href="#按位与（AND）" class="headerlink" title="按位与（AND）"></a>按位与（AND）</h4><p>　　按位与运算符“&amp;”，把两个数转化成二级制按位计算，如果两个运算数都是1，则结果为1，其他情况下，结果均为零。看下面的例子：  </p>
+<h4 id="按位与（AND）"><a href="#按位与（AND）" class="headerlink" title="按位与（AND）"></a>按位与（AND）</h4><p>　　按位与运算符“&amp;”，把两个数转化成二级制按位计算，如果两个运算数都是1，则结果为1，其他情况下，结果均为0。看下面的例子：  </p>
 <pre><code>   0 0 1 0 1 0 1 0     42
  &amp; 0 0 0 0 1 1 1 1     15
 ---------------------------
@@ -38,7 +38,13 @@
 --------------------------
    0 0 1 0 1 1 1 1    47
 </code></pre><p>　　即用Java计算42|15的结果就是47。  </p>
-<h4 id="按位异或（XOR）"><a href="#按位异或（XOR）" class="headerlink" title="按位异或（XOR）"></a>按位异或（XOR）</h4><p>　　</p>
+<h4 id="按位异或（XOR）"><a href="#按位异或（XOR）" class="headerlink" title="按位异或（XOR）"></a>按位异或（XOR）</h4><p>　　按位异或运算符“^”，只有在两个比较的位不同时其结果是 1,否则结果是0，示例如下</p>
+<pre><code>   0 0 1 0 1 0 1 0    42
+ ^ 0 0 0 0 1 1 1 1    15 
+--------------------------
+   0 0 1 0 0 1 0 1    37
+</code></pre><p>　　即用Java计算42^15的结果就是37。这里测试异或的作用根据它的原理：0异或任何数结果为异或的那个数， 自己异或自己是0，并且异或满足交换律，所以可以处理一些算法，比如说有组数据丢失了一个数，想要找出丢失的那个数就可以把原数据和已丢失数的数据合并进行逐个异或，最后的结果就是丢失的那个数，因为相同的数都是偶数的个数，只有丢失那个是奇数个数。
+　　</p>
 ]]></content>
     
     <summary type="html">
