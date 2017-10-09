@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-10-09T02:39:49.165Z</updated>
+  <updated>2017-10-09T02:43:37.477Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java基础教程学习记录</title>
+    <title>Java基础教程学习记录一——运算符</title>
     <link href="https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/"/>
     <id>https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/</id>
     <published>2017-09-19T09:00:33.000Z</published>
-    <updated>2017-10-09T02:39:49.165Z</updated>
+    <updated>2017-10-09T02:43:37.477Z</updated>
     
     <content type="html"><![CDATA[<p>　　由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。</p>
 <a id="more"></a>
@@ -109,6 +109,8 @@ class Ternary {
       <category term="基础" scheme="https://dorashock.github.io/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="note" scheme="https://dorashock.github.io/tags/note/"/>
+    
+      <category term="运算符" scheme="https://dorashock.github.io/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
   </entry>
   
