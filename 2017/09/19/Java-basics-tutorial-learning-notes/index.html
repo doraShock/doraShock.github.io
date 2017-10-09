@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://dorashock.github.io">
   <title>Java基础教程学习记录 | Shock.Le</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。">
+  <meta name="description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。">
 <meta name="keywords" content="Java,基础,note">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础教程学习记录">
 <meta property="og:url" content="https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/index.html">
 <meta property="og:site_name" content="Shock.Le">
-<meta property="og:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。">
+<meta property="og:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-09-28T07:30:45.725Z">
+<meta property="og:updated_time" content="2017-10-09T02:04:52.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础教程学习记录">
-<meta name="twitter:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。">
+<meta name="twitter:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。">
   
     <link rel="alternative" href="/atom.xml" title="Shock.Le" type="application/atom+xml">
   
@@ -183,7 +183,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>　　由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。</p>
+        <p>　　由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。</p>
 <a id="more"></a>
 <h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>　　二进制补码：Java中用补码的方式来表示负数，也就是把一个正数转化成二级制然后按位取反（0变成1,1变成0），然后把结果加1。比如42的二级制是00101010，按位取反是11010101，加1后得到11010110，表示的就是-42。如果解码负数一样是把二进制按位取反后加1，-42的二级制表示11010110按位取反是00101001,转换成十进制就是41，然后加1就得到42。考虑到零的交叉（zero crossing）问题，们规定，-0和0的表示方法一样。  </p>
 <h4 id="按位非（NOT）"><a href="#按位非（NOT）" class="headerlink" title="按位非（NOT）"></a>按位非（NOT）</h4><p>　　按位非也叫做补，一元运算符NOT“~”是对其运算数的每一位取反。<br>　　例如，数字42，它的二进制代码为：00101010<br>　　经过按位非运算成为：11010101，转化成十进制就是-41。  </p>
@@ -227,7 +227,28 @@
     ……
 }
 </code></pre><p>　　上述程序如果demo为0则结果为假后面不执行，如果demo不为0就可以作为除数，这样就避免了程序运行中出现被0除的错误。  </p>
+<h3 id="？运算符"><a href="#？运算符" class="headerlink" title="？运算符"></a>？运算符</h3><p>　　Java提供了一个特别的三元运算符“？”，一般可以用来取代if-else语句，用法和C/C++里面的差不多，“？”左边写布尔类型的值，如果为真执行“？”后面“:”前面的内容，如果为假执行“:”后面的内容。示例如下：  </p>
+<pre><code>ratio = denom == 0 ? 0 : num / denom;
+</code></pre><p>　　如果demo是0的话则ratio结果为0，否则结果是num/demo。给一个使用“？”运算符计算绝对值的代码示例：</p>
+<pre><code>// Demonstrate ?.
+class Ternary {
+    public static void main(String args[]) {
+        int i, k;
+        i = 10;
+        k = i &lt; 0 ? -i : i; // 获取 i 的绝对值
+        System.out.println(i + &quot; 的绝对值是 &quot; + k);
+        i = -10;
+        k = i &lt; 0 ? -i : i; // 获取 i 的绝对值
+        System.out.println(i + &quot; 的绝对值是 &quot; + k);
+    }
+}
 
+代码输出结果如下：
+
+  10 的绝对值是 10
+ -10 的绝对值是 10
+</code></pre><h3 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h3><p>　　和数学的符号一样，Java中的运算符是有一个先后顺序的，下表排列了Java中各运算符从最高到最低的优先级。  </p>
+<table style="width:600px;"><br>    <tr><br>        <td><br>            ()<br>        </td><br>        <td><br>            []<br>        </td><br>        <td><br>            .<br>        </td><br>        <td><br>            ++<br>        </td><br>        <td><br>            –<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            ~<br>        </td><br>        <td><br>            !<br>        </td><br>        <td><br>            *<br>        </td><br>        <td><br>            /<br>        </td><br>        <td><br>            %<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            +<br>        </td><br>        <td><br>            -<br>        </td><br>        <td><br>            &gt;&gt;<br>        </td><br>        <td><br>            &gt;&gt;&gt;<br>        </td><br>        <td><br>            &lt;&lt;<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            &gt;<br>        </td><br>        <td><br>            &gt;=<br>        </td><br>        <td><br>            &lt;<br>        </td><br>        <td><br>            &lt;=<br>        </td><br>        <td><br>            ==<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            !=<br>        </td><br>        <td><br>            &amp;<br>        </td><br>        <td><br>            ^<br>        </td><br>        <td><br>            |<br>        </td><br>        <td><br>            &amp;&amp;<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            ||<br>        </td><br>        <td><br>            ? :<br>        </td><br>        <td><br>            =<br>        </td><br>        <td><br>            op=<br>        </td><br>        <td><br>            最低<br>        </td><br>    </tr><br></table>
       
 
       
@@ -379,7 +400,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算符"><span class="toc-number">1.</span> <span class="toc-text">位运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#按位非（NOT）"><span class="toc-number">1.1.</span> <span class="toc-text">按位非（NOT）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位与（AND）"><span class="toc-number">1.2.</span> <span class="toc-text">按位与（AND）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位或（OR）"><span class="toc-number">1.3.</span> <span class="toc-text">按位或（OR）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位异或（XOR）"><span class="toc-number">1.4.</span> <span class="toc-text">按位异或（XOR）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#左移运算符"><span class="toc-number">1.5.</span> <span class="toc-text">左移运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#右移运算符"><span class="toc-number">1.6.</span> <span class="toc-text">右移运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无符号右移"><span class="toc-number">1.7.</span> <span class="toc-text">无符号右移</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#短路（short-circuit）逻辑运算符"><span class="toc-number">1.8.</span> <span class="toc-text">短路（short-circuit）逻辑运算符</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算符"><span class="toc-number">1.</span> <span class="toc-text">位运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#按位非（NOT）"><span class="toc-number">1.1.</span> <span class="toc-text">按位非（NOT）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位与（AND）"><span class="toc-number">1.2.</span> <span class="toc-text">按位与（AND）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位或（OR）"><span class="toc-number">1.3.</span> <span class="toc-text">按位或（OR）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#按位异或（XOR）"><span class="toc-number">1.4.</span> <span class="toc-text">按位异或（XOR）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#左移运算符"><span class="toc-number">1.5.</span> <span class="toc-text">左移运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#右移运算符"><span class="toc-number">1.6.</span> <span class="toc-text">右移运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无符号右移"><span class="toc-number">1.7.</span> <span class="toc-text">无符号右移</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#短路（short-circuit）逻辑运算符"><span class="toc-number">1.8.</span> <span class="toc-text">短路（short-circuit）逻辑运算符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#？运算符"><span class="toc-number">2.</span> <span class="toc-text">？运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算符优先级"><span class="toc-number">3.</span> <span class="toc-text">运算符优先级</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -494,30 +515,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">note</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">web</a>
               </li>
              
@@ -538,15 +535,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+                <a href="javascript:void(0)" class="js-tag color5">note</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -559,6 +556,30 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Tampermonkey</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">百度云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">插件</a>
               </li>
              
               <li class="article-tag-list-item">
