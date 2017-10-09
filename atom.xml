@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-10-09T02:04:52.678Z</updated>
+  <updated>2017-10-09T02:08:10.799Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/"/>
     <id>https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/</id>
     <published>2017-09-19T09:00:33.000Z</published>
-    <updated>2017-10-09T02:04:52.678Z</updated>
+    <updated>2017-10-09T02:08:10.799Z</updated>
     
     <content type="html"><![CDATA[<p>　　由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。</p>
 <a id="more"></a>
@@ -86,8 +86,8 @@ class Ternary {
 
   10 的绝对值是 10
  -10 的绝对值是 10
-</code></pre><h3 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h3><p>　　和数学的符号一样，Java中的运算符是有一个先后顺序的，下表排列了Java中各运算符从最高到最低的优先级。  </p>
-<table style="width:600px;"><br>    <tr><br>        <td><br>            ()<br>        </td><br>        <td><br>            []<br>        </td><br>        <td><br>            .<br>        </td><br>        <td><br>            ++<br>        </td><br>        <td><br>            –<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            ~<br>        </td><br>        <td><br>            !<br>        </td><br>        <td><br>            *<br>        </td><br>        <td><br>            /<br>        </td><br>        <td><br>            %<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            +<br>        </td><br>        <td><br>            -<br>        </td><br>        <td><br>            &gt;&gt;<br>        </td><br>        <td><br>            &gt;&gt;&gt;<br>        </td><br>        <td><br>            &lt;&lt;<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            &gt;<br>        </td><br>        <td><br>            &gt;=<br>        </td><br>        <td><br>            &lt;<br>        </td><br>        <td><br>            &lt;=<br>        </td><br>        <td><br>            ==<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            !=<br>        </td><br>        <td><br>            &amp;<br>        </td><br>        <td><br>            ^<br>        </td><br>        <td><br>            |<br>        </td><br>        <td><br>            &amp;&amp;<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            ||<br>        </td><br>        <td><br>            ? :<br>        </td><br>        <td><br>            =<br>        </td><br>        <td><br>            op=<br>        </td><br>        <td><br>            最低<br>        </td><br>    </tr><br></table>]]></content>
+</code></pre><h3 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h3><p>　　和数学的符号一样，Java中的运算符是有一个先后顺序的，下表排列了Java中各运算符从最高到最低的优先级。</p>
+<table style="width:600px;text-align:center;line-height:40px;"><br>    <tr><br>        <td><br>            ()<br>        </td><br>        <td><br>            []<br>        </td><br>        <td><br>            .<br>        </td><br>        <td><br>            ++<br>        </td><br>        <td><br>            –<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            ~<br>        </td><br>        <td><br>            !<br>        </td><br>        <td><br>            *<br>        </td><br>        <td><br>            /<br>        </td><br>        <td><br>            %<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            +<br>        </td><br>        <td><br>            -<br>        </td><br>        <td><br>            &gt;&gt;<br>        </td><br>        <td><br>            &gt;&gt;&gt;<br>        </td><br>        <td><br>            &lt;&lt;<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            &gt;<br>        </td><br>        <td><br>            &gt;=<br>        </td><br>        <td><br>            &lt;<br>        </td><br>        <td><br>            &lt;=<br>        </td><br>        <td><br>            ==<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            !=<br>        </td><br>        <td><br>            &amp;<br>        </td><br>        <td><br>            ^<br>        </td><br>        <td><br>            |<br>        </td><br>        <td><br>            &amp;&amp;<br>        </td><br>    </tr><br>    <tr><br>        <td><br>            ||<br>        </td><br>        <td><br>            ? :<br>        </td><br>        <td><br>            =<br>        </td><br>        <td><br>            op=<br>        </td><br>        <td><br>            最低<br>        </td><br>    </tr><br></table>]]></content>
     
     <summary type="html">
     
