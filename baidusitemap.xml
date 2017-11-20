@@ -4,6 +4,47 @@
 
     
   <url>
+    <loc>https://dorashock.github.io/2017/11/20/hello-world/</loc>
+    <lastmod>2017-11-20T06:18:17.259Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-11-20T06:18:17.259Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dorashock.github.io/2017/11/09/Java-TCP-IP-Socket/</loc>
+    <lastmod>2017-11-14T03:35:28.090Z</lastmod>
+    <data>
+        <display>
+        <title>Java TCP+IP+Socket编程记录</title>
+        <pubTime>2017-11-09T06:47:00.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>Socket</tag>
+         
+        <tag>note</tag>
+         
+        <tag>TCP/IP</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/</loc>
     <lastmod>2017-10-09T02:43:37.477Z</lastmod>
     <data>
@@ -13,9 +54,9 @@
         
         <tag>Java</tag>
          
-        <tag>基础</tag>
-         
         <tag>note</tag>
+         
+        <tag>基础</tag>
          
         <tag>运算符</tag>
          
