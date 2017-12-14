@@ -379,6 +379,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/31/hexo-and-github-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://dorashock.github.io/2017/07/31/hexo-and-github-blog/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
           
 
           
@@ -560,6 +570,21 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -818,6 +843,12 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1277,6 +1308,43 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
