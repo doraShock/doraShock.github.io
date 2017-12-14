@@ -548,6 +548,21 @@ yum install iptables   //Linux,CentOS使用此命令
 
       
       
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
       
 
       
@@ -1290,14 +1305,26 @@ yum install iptables   //Linux,CentOS使用此命令
 
   <script>
     
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "vertical";
+      
+          pbOptions.position = "Left";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
     
       flOptions = {};
       
-          flOptions.iconStyle = "box";
+          flOptions.iconStyle = "default";
       
-          flOptions.boxForm = "horizontal";
+          flOptions.boxForm = "vertical";
       
-          flOptions.position = "middleRight";
+          flOptions.position = "Left";
       
           flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
       
