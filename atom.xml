@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dorashock.github.io/"/>
-  <updated>2017-11-14T03:35:28.090Z</updated>
+  <updated>2017-12-14T08:03:17.784Z</updated>
   <id>https://dorashock.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java TCP+IP+Socket编程记录</title>
+    <title>Java TCP+IP+Socket编程记录（上）</title>
     <link href="https://dorashock.github.io/2017/11/09/Java-TCP-IP-Socket/"/>
     <id>https://dorashock.github.io/2017/11/09/Java-TCP-IP-Socket/</id>
     <published>2017-11-09T06:47:00.000Z</published>
-    <updated>2017-11-14T03:35:28.090Z</updated>
+    <updated>2017-12-14T08:03:17.784Z</updated>
     
     <content type="html"><![CDATA[<p>　　命运坎坷，以后有空再写入文章中。由于新工作要求，需要了解java socket的开发，所以找了Java TCP/IP Socket编程原书第2版，Kenneth L.Calvert Michael J.Donahoo著，周恒民老师译，机械工程出版社出版的。本来想练习下不做笔记，但是有些知识还是记了好，不然忘记了都没地方找去，想看原文章的可以自行百度，或者自行找联系我的方法。本人是单纯的选择了几个点进行记录，理解起来应该还算简单，概念比较多，想了解的话得有耐心看。</p>
 <a id="more"></a>
@@ -824,11 +824,11 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
+    
       <category term="yilia" scheme="https://dorashock.github.io/tags/yilia/"/>
     
       <category term="畅言" scheme="https://dorashock.github.io/tags/%E7%95%85%E8%A8%80/"/>
-    
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   
@@ -953,9 +953,9 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
-    
       <category term="github" scheme="https://dorashock.github.io/tags/github/"/>
+    
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   
