@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="DoraShock">
 <meta property="og:description" content="在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-19T03:23:54.533Z">
+<meta property="og:updated_time" content="2017-12-15T06:36:24.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
 <meta name="twitter:description" content="在使用Linux的过程中会用各种各样的命令，有时候记不住了再去百度也很麻烦，记录一下自己常用的命令，找起来也方便，后期也会随时更新。">
@@ -391,76 +391,22 @@
 <blockquote>
 <p>Linux相关</p>
 </blockquote>
-<pre><code>ls -a                                     #查看目录下所以文件
-pwd                                       #查看当前路径
-mkdir test                                #新建文件夹
-mv                                        #移动或重命名
-cp -r test test1                          #复制文件 -r递归目录下所有文件
-touch  test/a.txt                         #创建txt
-rm -rf test/                              #删除文件
-find                                      #在文件系统中搜索某文件
-locate interfaces                         #搜索interfaces文件
-vi test                                   #文本编辑器
-ESC或i或：                                 #切换编辑模式：命令模式、插入模式、编辑模式
-命令模式下：
-:q                                        #退出
-:q!                                       #强制退出
-:wq                                       #保存并退出
-:set number                               #显示行号
-:set nonumber                             #隐藏行号
-/apache                                   #在文档中查找apache 按n跳到下一个，shift+n上一个
-yyp                                       #复制光标所在行，并粘贴
-</code></pre><blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">ls -a                                     #查看目录下所以文件</div><div class="line">pwd                                       #查看当前路径</div><div class="line">mkdir test                                #新建文件夹</div><div class="line">mv                                        #移动或重命名</div><div class="line">cp -r test test1                          #复制文件 -r递归目录下所有文件</div><div class="line">touch  test/a.txt                         #创建txt</div><div class="line">rm -rf test/                              #删除文件</div><div class="line">find                                      #在文件系统中搜索某文件</div><div class="line">locate interfaces                         #搜索interfaces文件</div><div class="line">vi test                                   #文本编辑器</div><div class="line">ESC或i或：                                 #切换编辑模式：命令模式、插入模式、编辑模式</div><div class="line">命令模式下：</div><div class="line">:q                                        #退出</div><div class="line">:q!                                       #强制退出</div><div class="line">:wq                                       #保存并退出</div><div class="line">:set number                               #显示行号</div><div class="line">:set nonumber                             #隐藏行号</div><div class="line">/apache                                   #在文档中查找apache 按n跳到下一个，shift+n上一个</div><div class="line">yyp                                       #复制光标所在行，并粘贴</div></pre></td></tr></table></figure>
+<blockquote>
 <p>Tomcat相关</p>
 </blockquote>
-<pre><code>netstat –apn                              #查看端口占用
-./startup.sh                              #启动tomcat
-./shutdown.sh                             #停止tomcat
-tail -f ../logs/catalina.out              #查看tomcat的控制台输出
-ps -ef |grep tomcat                       #看是否已经有tomcat在运行了
-kill -9 pid                               #如果有，用kill;pid 为相应的进程号
-</code></pre><blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">netstat –apn                              #查看端口占用</div><div class="line">./startup.sh                              #启动tomcat</div><div class="line">./shutdown.sh                             #停止tomcat</div><div class="line">tail -f ../logs/catalina.out              #查看tomcat的控制台输出</div><div class="line">ps -ef |grep tomcat                       #看是否已经有tomcat在运行了</div><div class="line">kill -9 pid                               #如果有，用kill;pid 为相应的进程号</div></pre></td></tr></table></figure>
+<blockquote>
 <p>Nginx相关</p>
 </blockquote>
-<pre><code>./nginx -s reload                         #修改配置后重新加载生效
-./nginx -s reopen                         #重新打开日志文件
-./nginx -t                                #查看nginx配置文件路径以及该文件语法是否正确
-ps -ef | grep nginx                       #查看启动的Nginx目录
-</code></pre><blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">./nginx -s reload                         #修改配置后重新加载生效</div><div class="line">./nginx -s reopen                         #重新打开日志文件</div><div class="line">./nginx -t                                #查看nginx配置文件路径以及该文件语法是否正确</div><div class="line">ps -ef | grep nginx                       #查看启动的Nginx目录</div></pre></td></tr></table></figure>
+<blockquote>
 <p>maven相关</p>
 </blockquote>
-<pre><code>这些是在window上的命令，有些包网上没有，或者下载不下来的时候，有时候用baseurl打包不了，可以导入本地maven库，坏处是别人本地也要导入，不然引用不到
-${basedir}                               #在pom中jar路径前加，表示项目根目录,即包含pom.xml文件的目录，同${project.basedir}
-手动添加jar包到本地仓库：
-mvn install:install-file -Dfile=jar包的位置 -DgroupId=上面的groupId -DartifactId=上面的artifactId -Dversion=上面的version -Dpackaging=jar
-</code></pre><h3 id="2017年8月23日"><a href="#2017年8月23日" class="headerlink" title="2017年8月23日"></a>2017年8月23日</h3><p>　　今天在部署项目的时候，项目里的tcp连接连接不上，查找之后发现是防火墙没有开放端口，记录linux防火墙相关命令：</p>
-<pre><code>telnet ip port                            #检测远程端口是否通畅（Windows适用）
-service iptables stop                     #关闭防火墙
-service iptables start                    #启动防火墙
-service iptables restart                  #重启防火墙
-service iptables status                   #查看防火墙状态
-    -A                              #在指定链的末尾添加（append）一条新的规则
-    -D                              #删除（delete）指定链中的某一条规则，可以按规则序号和内容删除
-    -I                              #在指定链中插入（insert）一条新的规则，默认在第一行添加
-    -R                              #修改、替换（replace）指定链中的某一条规则，可以按规则序号和内容替换
-    -L                              #列出（list）指定链中所有的规则进行查看
-    -E                              #重命名用户定义的链，不改变链本身
-    -F                              #清空（flush）
-    -N                              #新建（new-chain）一条用户自己定义的规则链
-    -X                              #删除指定表中用户自定义的规则链（delete-chain）
-    -P                              #设置指定链的默认策略（policy）
-    -Z                              #将所有表的所有链的字节和数据包计数器清零
-    -n                              #使用数字形式（numeric）显示输出结果
-    -v                              #查看规则表详细信息（verbose）的信息
-    -V                              #查看版本(version)
-    -h                              #获取帮助（help）
-</code></pre><p>　　针对固定ip开放端口，编辑/etc/sysconfig/iptables，添加</p>
-<pre><code>-A INPUT -m state --state NEW -m tcp -p tcp -s 127.0.0.1 --dport 6379 -j ACCEPT
--A INPUT -m state --state NEW -m tcp -p tcp -s 126.212.173.185 --dport 6379 -j ACCEPT
-</code></pre><p>　　查看iptables状态是提示 iptables：unrecognized service，则需要安装（保证联网状态）。  </p>
-<pre><code>apt-get install iptables  //Debian,Ubuntu使用此命令
-yum install iptables   //Linux,CentOS使用此命令
-</code></pre><p>　　</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">这些是在window上的命令，有些包网上没有，或者下载不下来的时候，有时候用baseurl打包不了，可以导入本地maven库，坏处是别人本地也要导入，不然引用不到</div><div class="line">$&#123;basedir&#125;                               #在pom中jar路径前加，表示项目根目录,即包含pom.xml文件的目录，同$&#123;project.basedir&#125;</div><div class="line">手动添加jar包到本地仓库：</div><div class="line">mvn install:install-file -Dfile=jar包的位置 -DgroupId=上面的groupId -DartifactId=上面的artifactId -Dversion=上面的version -Dpackaging=jar</div></pre></td></tr></table></figure>
+<h3 id="2017年8月23日"><a href="#2017年8月23日" class="headerlink" title="2017年8月23日"></a>2017年8月23日</h3><p>　　今天在部署项目的时候，项目里的tcp连接连接不上，查找之后发现是防火墙没有开放端口，记录linux防火墙相关命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">telnet ip port                            #检测远程端口是否通畅（Windows适用）</div><div class="line">service iptables stop                     #关闭防火墙</div><div class="line">service iptables start                    #启动防火墙</div><div class="line">service iptables restart                  #重启防火墙</div><div class="line">service iptables status                   #查看防火墙状态</div><div class="line">	-A  							#在指定链的末尾添加（append）一条新的规则</div><div class="line">	-D  							#删除（delete）指定链中的某一条规则，可以按规则序号和内容删除</div><div class="line">	-I  							#在指定链中插入（insert）一条新的规则，默认在第一行添加</div><div class="line">	-R  							#修改、替换（replace）指定链中的某一条规则，可以按规则序号和内容替换</div><div class="line">	-L  							#列出（list）指定链中所有的规则进行查看</div><div class="line">	-E  							#重命名用户定义的链，不改变链本身</div><div class="line">	-F  							#清空（flush）</div><div class="line">	-N  							#新建（new-chain）一条用户自己定义的规则链</div><div class="line">	-X  							#删除指定表中用户自定义的规则链（delete-chain）</div><div class="line">	-P  							#设置指定链的默认策略（policy）</div><div class="line">	-Z  							#将所有表的所有链的字节和数据包计数器清零</div><div class="line">	-n  							#使用数字形式（numeric）显示输出结果</div><div class="line">	-v  							#查看规则表详细信息（verbose）的信息</div><div class="line">	-V  							#查看版本(version)</div><div class="line">	-h  							#获取帮助（help）</div><div class="line"></div><div class="line">　　针对固定ip开放端口，编辑/etc/sysconfig/iptables，添加</div><div class="line"></div><div class="line">-A INPUT -m state --state NEW -m tcp -p tcp -s 127.0.0.1 --dport 6379 -j ACCEPT</div><div class="line">-A INPUT -m state --state NEW -m tcp -p tcp -s 126.212.173.185 --dport 6379 -j ACCEPT</div><div class="line"></div><div class="line">　　查看iptables状态是提示 iptables：unrecognized service，则需要安装（保证联网状态）。  </div><div class="line"></div><div class="line">apt-get install iptables  //Debian,Ubuntu使用此命令</div><div class="line">yum install iptables   //Linux,CentOS使用此命令</div></pre></td></tr></table></figure>
+<p>　　</p>
 
       
     </div>

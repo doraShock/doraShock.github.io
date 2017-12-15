@@ -102,7 +102,7 @@
 <meta property="og:image" content="http://i.imgur.com/p0JotqF.png">
 <meta property="og:image" content="http://i.imgur.com/tNhJtVA.png">
 <meta property="og:image" content="http://i.imgur.com/ZmTBYQQ.png">
-<meta property="og:updated_time" content="2017-09-12T09:22:20.809Z">
+<meta property="og:updated_time" content="2017-12-15T06:32:43.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tampermonkey安装说明-百度云非破解不限速下载方法">
 <meta name="twitter:description" content="本来是看了别人的东西，找到了这个让我惊喜的方法。百度云大家都会用到，但是限制大文件直接下载和软件非会员限速就让我们很头疼了，不想花钱但是云盘的作用真的很方便，不仅仅是一些项目和技术文档，还有各种福利。一开始不打算自己记录，但是找的内容比较散，而且换个地方就找不到了，所以最终我还是写到自己的博客里，尽量写的充实一点，完整点，当然我也刚用，我只能把使用方法写的详细，就像标题说的，我用的最好用的就是">
@@ -405,16 +405,8 @@
 <h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><p>　　Tampermonkey支持多个浏览器，主流浏览器都可以使用，底层我也没去了解，做web编程的应该大致了解就是加了一些JavaScript语言，精通的人也可以自己研究编写脚本。<br>　　之前百度网盘分享的文件是可以不论大小使用下载器直接下载的，首先要准备两个百度账号，使用一个关注另外一个，找到要下载的文件保存到自己的网盘，然后分享，登陆另外一个账号到分享动态直接点击下载没有大文件显示，并且可以用下载器如下图  </p>
 <p><img src="http://i.imgur.com/IRNJChL.png" alt="">  </p>
 <p>　　所以说如果是这样的话有前端开发经验的人看看代码就可以直接下载自己想要的东西了，一个是我太懒，第二个切换账号也不方便，然后就找到了本篇的方法。<br>　　软件安装很简单，本教程以360安全浏览器为例，下面是各个浏览器下载地址：  </p>
-<pre><code>常用浏览器安装：
-搜狗浏览器：      http://ie.sogou.com/app/search/Tampermonkey
-360安全浏览器：   https://ext.se.360.cn/webstore/search/tampermonkey
-360极速浏览器：   https://ext.chrome.360.cn/webstore/search/tampermonkey
-火狐浏览器：      https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/?src=search
-遨游浏览器：      http://extension.maxthon.cn/detail/index.php?view_id=1680&amp;category_id=
-欧朋浏览器：      https://addons.opera.com/zh-cn/extensions/details/tampermonkey-beta/?display=en
-                （遨游浏览器的是Violentmonkey）
-其它浏览器可以去浏览器的拓展中心搜索 Tampermonkey  然后进行安装
-</code></pre><p>　　如果嫌弃地址不好记，也和其它浏览器一样去拓展中心搜索，以360安全浏览器为例，打开浏览器，右上菜单栏有个扩展，点击后选择添加，如果没找到可以鼠标右键浏览器头部，勾选插件栏  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">常用浏览器安装：</div><div class="line">   搜狗浏览器：      http://ie.sogou.com/app/search/Tampermonkey</div><div class="line">   360安全浏览器：   https://ext.se.360.cn/webstore/search/tampermonkey</div><div class="line">   360极速浏览器：   https://ext.chrome.360.cn/webstore/search/tampermonkey</div><div class="line">   火狐浏览器：      https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/?src=search</div><div class="line">   遨游浏览器：      http://extension.maxthon.cn/detail/index.php?view_id=1680&amp;category_id=</div><div class="line">   欧朋浏览器：      https://addons.opera.com/zh-cn/extensions/details/tampermonkey-beta/?display=en</div><div class="line">                   （遨游浏览器的是Violentmonkey）</div><div class="line">其它浏览器可以去浏览器的拓展中心搜索 Tampermonkey  然后进行安装</div></pre></td></tr></table></figure>
+<p>　　如果嫌弃地址不好记，也和其它浏览器一样去拓展中心搜索，以360安全浏览器为例，打开浏览器，右上菜单栏有个扩展，点击后选择添加，如果没找到可以鼠标右键浏览器头部，勾选插件栏  </p>
 <p><img src="http://i.imgur.com/DSSKHLG.png" alt="">  </p>
 <p>　　然后在右上角搜索栏搜索Tampermonkey，然后选择安装就可以了　 </p>
 <h2 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h2><p><img src="http://i.imgur.com/JMMY8MV.png" alt="">  </p>
@@ -424,14 +416,8 @@
 <p>　　比方说我们搜索百度的话，就可以看到跟百度有关的脚本了，如下所示  </p>
 <p><img src="http://i.imgur.com/aSU6FG9.png" alt="">  </p>
 <p>　　当然这里面就有网盘的脚本了，但是我也不知道是不是有效的，我下载直接下载助手没有用，不知道是因为冲突还是什么原因原因，下面贴上几个有用的脚本链接，我自己用没问题的：</p>
-<pre><code>百度网盘解析下载地址：https://greasyfork.org/zh-CN/scripts/29796-百度云解析-blog-tsyinpin-com-优化版
-解决百度云大文件下载限制：https://greasyfork.org/zh-CN/scripts/17800
-优化百度-搜狗-谷歌搜索结果之重定向去除-去广告：https://greasyfork.org/zh-CN/scripts/14178
-知乎免登陆：https://greasyfork.org/zh-CN/scripts/6489
-vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349
-网页强制复制：https://greasyfork.org/zh-CN/scripts/218
-网盘提取工具：https://greasyfork.org/zh-CN/scripts/18733
-</code></pre><p>　　我使用的就是网盘提取工具和下载地址解析，可以不用输提取码，直接解析地址添加到下载器中下载，安装方法如下，打开网盘解析的下载地址，点击安装此脚本  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">百度网盘解析下载地址：https://greasyfork.org/zh-CN/scripts/29796-百度云解析-blog-tsyinpin-com-优化版</div><div class="line">解决百度云大文件下载限制：https://greasyfork.org/zh-CN/scripts/17800</div><div class="line">优化百度-搜狗-谷歌搜索结果之重定向去除-去广告：https://greasyfork.org/zh-CN/scripts/14178</div><div class="line">知乎免登陆：https://greasyfork.org/zh-CN/scripts/6489</div><div class="line">vip视频在线解析：https://greasyfork.org/zh-CN/scripts/27349</div><div class="line">网页强制复制：https://greasyfork.org/zh-CN/scripts/218</div><div class="line">网盘提取工具：https://greasyfork.org/zh-CN/scripts/18733</div></pre></td></tr></table></figure>
+<p>　　我使用的就是网盘提取工具和下载地址解析，可以不用输提取码，直接解析地址添加到下载器中下载，安装方法如下，打开网盘解析的下载地址，点击安装此脚本  </p>
 <p><img src="http://i.imgur.com/bEnESY8.png" alt="">  </p>
 <p>　　跳转后选择安装，然后页面自动关闭，这样就安装完成了  </p>
 <p><img src="http://i.imgur.com/KGeXrEn.png" alt="">  </p>

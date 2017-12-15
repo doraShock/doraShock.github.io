@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Java,基础,note,运算符," />
+  <meta name="keywords" content="Java,note,基础,运算符," />
 
 
 
@@ -82,14 +82,14 @@
 
 
 <meta name="description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。">
-<meta name="keywords" content="Java,基础,note,运算符">
+<meta name="keywords" content="Java,note,基础,运算符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础教程学习记录一——运算符">
 <meta property="og:url" content="https://dorashock.github.io/2017/09/19/Java-basics-tutorial-learning-notes/index.html">
 <meta property="og:site_name" content="DoraShock">
 <meta property="og:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-09T02:43:37.477Z">
+<meta property="og:updated_time" content="2017-12-15T06:35:12.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础教程学习记录一——运算符">
 <meta name="twitter:description" content="由于前期学习不主动规范，面试时候也没有去翻看面试题，导致暴露自己基础薄弱的问题，就找了本基础书进行翻看，寻找自己遗漏的知识点并进行记录，从而为自己以后看jvm，设计模式，性能优化，高并发和算法等之类的内容打个好的基础。这边提前说下，我记录的都是我自己的遗漏的知识或者之前就算遇到但是没用过的知识点，记录下来改进自己的编码习惯，完善自己的知识，读者选读就好了，也不是说这些都是重点。">
@@ -391,73 +391,31 @@
 <h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>　　二进制补码：Java中用补码的方式来表示负数，也就是把一个正数转化成二级制然后按位取反（0变成1,1变成0），然后把结果加1。比如42的二级制是00101010，按位取反是11010101，加1后得到11010110，表示的就是-42。如果解码负数一样是把二进制按位取反后加1，-42的二级制表示11010110按位取反是00101001,转换成十进制就是41，然后加1就得到42。考虑到零的交叉（zero crossing）问题，们规定，-0和0的表示方法一样。  </p>
 <h4 id="按位非（NOT）"><a href="#按位非（NOT）" class="headerlink" title="按位非（NOT）"></a>按位非（NOT）</h4><p>　　按位非也叫做补，一元运算符NOT“~”是对其运算数的每一位取反。<br>　　例如，数字42，它的二进制代码为：00101010<br>　　经过按位非运算成为：11010101，转化成十进制就是-41。  </p>
 <h4 id="按位与（AND）"><a href="#按位与（AND）" class="headerlink" title="按位与（AND）"></a>按位与（AND）</h4><p>　　按位与运算符“&amp;”，把两个数转化成二级制按位计算，如果两个运算数都是1，则结果为1，其他情况下，结果均为0。看下面的例子：  </p>
-<pre><code>   0 0 1 0 1 0 1 0     42
- &amp; 0 0 0 0 1 1 1 1     15
----------------------------
-   0 0 0 0 1 0 1 0     10
-</code></pre><p>　　即用Java计算42&amp;15的结果就是10。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   0 0 1 0 1 0 1 0     42</div><div class="line"> &amp; 0 0 0 0 1 1 1 1     15</div><div class="line">---------------------------</div><div class="line">   0 0 0 0 1 0 1 0     10</div></pre></td></tr></table></figure>
+<p>　　即用Java计算42&amp;15的结果就是10。  </p>
 <h4 id="按位或（OR）"><a href="#按位或（OR）" class="headerlink" title="按位或（OR）"></a>按位或（OR）</h4><p>　　按位或运算符“|”，把两个数转化成二级制按位计算，有一个运算数是1，则结果为1。如下面的例子所示：  </p>
-<pre><code>   0 0 1 0 1 0 1 0    42
- | 0 0 0 0 1 1 1 1    15 
---------------------------
-   0 0 1 0 1 1 1 1    47
-</code></pre><p>　　即用Java计算42|15的结果就是47。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   0 0 1 0 1 0 1 0    42</div><div class="line"> | 0 0 0 0 1 1 1 1    15 </div><div class="line">--------------------------</div><div class="line">   0 0 1 0 1 1 1 1    47</div></pre></td></tr></table></figure>
+<p>　　即用Java计算42|15的结果就是47。  </p>
 <h4 id="按位异或（XOR）"><a href="#按位异或（XOR）" class="headerlink" title="按位异或（XOR）"></a>按位异或（XOR）</h4><p>　　按位异或运算符“^”，只有在两个比较的位不同时其结果是 1,否则结果是0，示例如下</p>
-<pre><code>   0 0 1 0 1 0 1 0    42
- ^ 0 0 0 0 1 1 1 1    15 
---------------------------
-   0 0 1 0 0 1 0 1    37
-</code></pre><p>　　即用Java计算42^15的结果就是37。这里测试异或的作用根据它的原理：0异或任何数结果为异或的那个数， 自己异或自己是0，并且异或满足交换律，所以可以处理一些算法，比如说有组数据丢失了一个数，想要找出丢失的那个数就可以把原数据和已丢失数的数据合并进行逐个异或，最后的结果就是丢失的那个数，因为相同的数都是偶数的个数，只有丢失那个是奇数个数。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   0 0 1 0 1 0 1 0    42</div><div class="line"> ^ 0 0 0 0 1 1 1 1    15 </div><div class="line">--------------------------</div><div class="line">   0 0 1 0 0 1 0 1    37</div></pre></td></tr></table></figure>
+<p>　　即用Java计算42^15的结果就是37。这里测试异或的作用根据它的原理：0异或任何数结果为异或的那个数， 自己异或自己是0，并且异或满足交换律，所以可以处理一些算法，比如说有组数据丢失了一个数，想要找出丢失的那个数就可以把原数据和已丢失数的数据合并进行逐个异或，最后的结果就是丢失的那个数，因为相同的数都是偶数的个数，只有丢失那个是奇数个数。  </p>
 <h4 id="左移运算符"><a href="#左移运算符" class="headerlink" title="左移运算符"></a>左移运算符</h4><p>　　左移运算符“&lt;&lt;”使指定值的所有位都左移规定的次数，每左移1位，高阶位丢弃，右面补0。在Java里面byte和short类型的值进行左移会自动扩展为int类型，每移动1位第31位就会被丢弃，同理，long类型的值每移动1位第63位就会被丢弃。</p>
-<pre><code>   0 0 0 0 1 1 1 1    15
- &lt;&lt; 2
--------------------------
-   0 0 1 1 1 1 0 0    60
-</code></pre><p>　　进行简单的运算后就会发现规律：把 m 左移 n 位相当于进行运算 m * 2ⁿ，用该运算符进行乘2运算会非常的快速，但是要注意所使用类型的范围。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   0 0 0 0 1 1 1 1    15</div><div class="line"> &lt;&lt; 2</div><div class="line">-------------------------</div><div class="line">   0 0 1 1 1 1 0 0    60</div></pre></td></tr></table></figure>
+<p>　　进行简单的运算后就会发现规律：把 m 左移 n 位相当于进行运算 m * 2ⁿ，用该运算符进行乘2运算会非常的快速，但是要注意所使用类型的范围。  </p>
 <h4 id="右移运算符"><a href="#右移运算符" class="headerlink" title="右移运算符"></a>右移运算符</h4><p>　　右移运算符“&gt;&gt;”使指定值的所有位都右移规定的次数，每右移1位，低阶位丢弃，新增的最高位（最左边的位）由原来最高位的数字补充，例如，如果要移走的值为负数，每一次右移都在左边补1，如果要移走的值为正数，每一次右移都在左边补0，这叫做符号位扩展（保留符号位）（sign extension）。</p>
-<pre><code>   0 0 1 0 0 0 1 1   35       1 1 1 1 1 0 0 0    –8
- &gt;&gt; 2                       &gt;&gt; 1
-------------------------------------------------------
-   0 0 0 0 1 0 0 0   8        1 1 1 1 1 1 0 0    –4
-</code></pre><p>　　右移的规律是：把值每右移一次，就相当于将该值除以2并且舍弃了余数，这样就可以快速把一个整数进行除2运算，同时一样要注意该整数大小。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   0 0 1 0 0 0 1 1   35       1 1 1 1 1 0 0 0    –8</div><div class="line"> &gt;&gt; 2                       &gt;&gt; 1</div><div class="line">------------------------------------------------------</div><div class="line">   0 0 0 0 1 0 0 0   8        1 1 1 1 1 1 0 0    –4</div></pre></td></tr></table></figure>
+<p>　　右移的规律是：把值每右移一次，就相当于将该值除以2并且舍弃了余数，这样就可以快速把一个整数进行除2运算，同时一样要注意该整数大小。  </p>
 <h4 id="无符号右移"><a href="#无符号右移" class="headerlink" title="无符号右移"></a>无符号右移</h4><p>　　无符号右移运算符“&gt;&gt;&gt;”使指定值的所有位都右移规定的次数，每右移1位，低阶位丢弃，左边补0。右移运算符保留原值符号有些时候不是别人想要的，常用与处理像素或图形时。</p>
-<pre><code> 11111111 11111111 11111111 11111111     int型- 1的二进制代码
- &gt;&gt;&gt; 24 无符号右移24位
--------------------------------------------------------------
- 00000000 00000000 00000000 11111111     int型255的二进制代码
-</code></pre><h4 id="短路（short-circuit）逻辑运算符"><a href="#短路（short-circuit）逻辑运算符" class="headerlink" title="短路（short-circuit）逻辑运算符"></a>短路（short-circuit）逻辑运算符</h4><p>　　在之前没有系统的梳理过程中一直认为的是按位与和逻辑与，按位或和逻辑或，看了以后了解到“|”在位运算符中叫按位或，主要用于数值的计算，在逻辑运算符中叫逻辑或，用于判断，而“||”是Java中特殊的逻辑运算符短路或，“&amp;”运算符和“&amp;&amp;”也是同理。在逻辑运算符中，逻辑与和逻辑或是无论结果如何运算符两边的程序都会执行，而且根据运算来看的话，在逻辑或运算中如果左边为真则结果一定为真，在逻辑与运算中如果左边为假则结果一定为假，在这个时候Java就推出短路与和短路或，如果有类似的情况的话那么右边的程序就不会运行，起到保护作用，示例如下：  </p>
-<pre><code>if (denom != 0 &amp;&amp; num / denom &gt; 10){
-    ……
-}
-</code></pre><p>　　上述程序如果demo为0则结果为假后面不执行，如果demo不为0就可以作为除数，这样就避免了程序运行中出现被0除的错误。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> 11111111 11111111 11111111 11111111     int型- 1的二进制代码</div><div class="line"> &gt;&gt;&gt; 24 无符号右移24位</div><div class="line">-------------------------------------------------------------</div><div class="line"> 00000000 00000000 00000000 11111111     int型255的二进制代码</div></pre></td></tr></table></figure>
+<h4 id="短路（short-circuit）逻辑运算符"><a href="#短路（short-circuit）逻辑运算符" class="headerlink" title="短路（short-circuit）逻辑运算符"></a>短路（short-circuit）逻辑运算符</h4><p>　　在之前没有系统的梳理过程中一直认为的是按位与和逻辑与，按位或和逻辑或，看了以后了解到“|”在位运算符中叫按位或，主要用于数值的计算，在逻辑运算符中叫逻辑或，用于判断，而“||”是Java中特殊的逻辑运算符短路或，“&amp;”运算符和“&amp;&amp;”也是同理。在逻辑运算符中，逻辑与和逻辑或是无论结果如何运算符两边的程序都会执行，而且根据运算来看的话，在逻辑或运算中如果左边为真则结果一定为真，在逻辑与运算中如果左边为假则结果一定为假，在这个时候Java就推出短路与和短路或，如果有类似的情况的话那么右边的程序就不会运行，起到保护作用，示例如下：  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (denom != <span class="number">0</span> &amp;&amp; num / denom &gt; <span class="number">10</span>)&#123;</div><div class="line">	……</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>　　上述程序如果demo为0则结果为假后面不执行，如果demo不为0就可以作为除数，这样就避免了程序运行中出现被0除的错误。  </p>
 <h3 id="？运算符"><a href="#？运算符" class="headerlink" title="？运算符"></a>？运算符</h3><p>　　Java提供了一个特别的三元运算符“？”，一般可以用来取代if-else语句，用法和C/C++里面的差不多，“？”左边写布尔类型的值，如果为真执行“？”后面“:”前面的内容，如果为假执行“:”后面的内容。示例如下：  </p>
-<pre><code>ratio = denom == 0 ? 0 : num / denom;
-</code></pre><p>　　如果demo是0的话则ratio结果为0，否则结果是num/demo。给一个使用“？”运算符计算绝对值的代码示例：</p>
-<pre><code>// Demonstrate ?.
-class Ternary {
-    public static void main(String args[]) {
-        int i, k;
-        i = 10;
-        k = i &lt; 0 ? -i : i; // 获取 i 的绝对值
-        System.out.println(i + &quot; 的绝对值是 &quot; + k);
-        i = -10;
-        k = i &lt; 0 ? -i : i; // 获取 i 的绝对值
-        System.out.println(i + &quot; 的绝对值是 &quot; + k);
-    }
-}
-
-代码输出结果如下：
-
-  10 的绝对值是 10
- -10 的绝对值是 10
-</code></pre><h3 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h3><p>　　和数学的符号一样，Java中的运算符是有一个先后顺序的，下表排列了Java中各运算符从最高到最低的优先级。  </p>
-<pre><code>()       []       .       ++       --
-~        !        *       /        %
-+        -        &gt;&gt;      &gt;&gt;&gt;      &lt;&lt;
-&gt;        &gt;=       &lt;       &lt;=       ==
-!=       &amp;        ^       ||       &amp;&amp; 
-|        ? :      =       op=      
-</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ratio = denom == <span class="number">0</span> ? <span class="number">0</span> : num / denom;</div></pre></td></tr></table></figure>
+<p>　　如果demo是0的话则ratio结果为0，否则结果是num/demo。给一个使用“？”运算符计算绝对值的代码示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Demonstrate ?.</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Ternary</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</div><div class="line">		<span class="keyword">int</span> i, k;</div><div class="line">		i = <span class="number">10</span>;</div><div class="line">		k = i &lt; <span class="number">0</span> ? -i : i; <span class="comment">// 获取 i 的绝对值</span></div><div class="line">		System.out.println(i + <span class="string">" 的绝对值是 "</span> + k);</div><div class="line">		i = -<span class="number">10</span>;</div><div class="line">		k = i &lt; <span class="number">0</span> ? -i : i; <span class="comment">// 获取 i 的绝对值</span></div><div class="line">		System.out.println(i + <span class="string">" 的绝对值是 "</span> + k);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">代码输出结果如下：</div><div class="line"></div><div class="line">  <span class="number">10</span> 的绝对值是 <span class="number">10</span></div><div class="line"> -<span class="number">10</span> 的绝对值是 <span class="number">10</span></div></pre></td></tr></table></figure>
+<h3 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h3><p>　　和数学的符号一样，Java中的运算符是有一个先后顺序的，下表排列了Java中各运算符从最高到最低的优先级。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">()       []       .       ++       --</div><div class="line">~        !        *       /        %</div><div class="line">+        -        &gt;&gt;      &gt;&gt;&gt;      &lt;&lt;</div><div class="line">&gt;        &gt;=       &lt;       &lt;=       ==</div><div class="line">!=       &amp;        ^       ||       &amp;&amp; </div><div class="line">|        ? :      =       op=</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -505,9 +463,9 @@ class Ternary {
           
             <a href="/tags/Java/" rel="tag"># Java</a>
           
-            <a href="/tags/基础/" rel="tag"># 基础</a>
-          
             <a href="/tags/note/" rel="tag"># note</a>
+          
+            <a href="/tags/基础/" rel="tag"># 基础</a>
           
             <a href="/tags/运算符/" rel="tag"># 运算符</a>
           

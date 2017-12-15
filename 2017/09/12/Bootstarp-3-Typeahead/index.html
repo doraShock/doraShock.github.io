@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="DoraShock">
 <meta property="og:description" content="在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-12T10:10:18.371Z">
+<meta property="og:updated_time" content="2017-12-15T06:23:40.924Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bootstarp 3 Typeahead —— Bootstarp输入框自动补全插件">
 <meta name="twitter:description" content="在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式">
@@ -389,29 +389,8 @@
         <p>　　在本次开发过程中遇到输入框模糊搜索的功能，用的Bootstrap就去查看官方api，但是最新的api没有该插件，然后搜索到了叫Typeahead，查看bootstrap2的api里面有对应的一个说明，根据api和别人的例子进行实现，功能是实现了，但是实现效果比较不理想，想了解的话可以自己去查看api，因为只能对name数组进行模糊搜索，但是一般我们的相关数据肯定是要获取id的，以json的形式就没办法很好的展现了。  </p>
 <a id="more"></a>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　Typeahead插件开放了几个方法，进行重写覆盖之后就可以实现对应功能了，链接在底部，我看着思路是对的，但是按照对应方法去实现的时候总是补全不了，不知道是我什么地方搞错了，比较崩溃，前后搞了很久，后来还是没有实现，再找其它思路的时候找到了原来api并没有进行更新，或许是别人进行了修改吧，我也不知道是不是bootstrap官方的GitHub，但是下载最新的Typeahead改写了原有的process方法，传json的话对应id和name字段就可以直接解析了，示例如下：</p>
-<pre><code> $(&quot;#id&quot;).typeahead({
-    source: function (query, process) {
-        var json=[];
-        $.ajax({
-            url: &quot;&quot;,
-            type: &quot;post&quot;,
-            data: {
-                userType: $(&quot;#pay_user_type&quot;).val(),
-                query:query                
-            },
-            dataType: &quot;json&quot;,
-            async: false ,
-            success: function (data) {
-                json = data.records;
-            }
-        });
-        return process(json);
-    },
-    updater: function (obj) {
-        return obj.name;
-    }
-});
-</code></pre><p>　　直接source定义数据源就可以了，如果是ajax的话实现范围就广泛很多了，有两个参数，query是输入内容，传输的话可以优化搜索，不传也没事，返回前端的数据该插件有匹配函数，process则是解析函数，解析成差劲可以识别的数据源，updater方法是点击事件，返回值是显示在输入框中的数据，我这边是在里面把点击数据的id保存到页面的隐藏输入框中操作在里面，所以重写了一下，如果有匹配内容修改的话也可以在这里返回。其它方法我就不介绍了底部附上链接，需要的可以自己查看，这两个方法已经满足我的需求实现了。  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"> $(<span class="string">"#id"</span>).typeahead(&#123;</div><div class="line">    <span class="attr">source</span>: <span class="function"><span class="keyword">function</span> (<span class="params">query, process</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> json=[];</div><div class="line">        $.ajax(&#123;</div><div class="line">            <span class="attr">url</span>: <span class="string">""</span>,</div><div class="line">            <span class="attr">type</span>: <span class="string">"post"</span>,</div><div class="line">            <span class="attr">data</span>: &#123;</div><div class="line">                <span class="attr">userType</span>: $(<span class="string">"#pay_user_type"</span>).val(),</div><div class="line">	<span class="attr">query</span>:query                </div><div class="line">            &#125;,</div><div class="line">            <span class="attr">dataType</span>: <span class="string">"json"</span>,</div><div class="line">            <span class="attr">async</span>: <span class="literal">false</span> ,</div><div class="line">            <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">                json = data.records;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line">        <span class="keyword">return</span> process(json);</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">updater</span>: <span class="function"><span class="keyword">function</span> (<span class="params">obj</span>) </span>&#123;</div><div class="line">        <span class="keyword">return</span> obj.name;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>　　直接source定义数据源就可以了，如果是ajax的话实现范围就广泛很多了，有两个参数，query是输入内容，传输的话可以优化搜索，不传也没事，返回前端的数据该插件有匹配函数，process则是解析函数，解析成差劲可以识别的数据源，updater方法是点击事件，返回值是显示在输入框中的数据，我这边是在里面把点击数据的id保存到页面的隐藏输入框中操作在里面，所以重写了一下，如果有匹配内容修改的话也可以在这里返回。其它方法我就不介绍了底部附上链接，需要的可以自己查看，这两个方法已经满足我的需求实现了。  </p>
 <h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>　　【Bootstrap】 typeahead自动补全：<a href="http://www.cnblogs.com/shiyu404/p/6344591.html" target="_blank" rel="external">http://www.cnblogs.com/shiyu404/p/6344591.html</a><br>　　Bootstrap 3 Typeahead：<a href="https://github.com/bassjobsen/Bootstrap-3-Typeahead" target="_blank" rel="external">https://github.com/bassjobsen/Bootstrap-3-Typeahead</a></p>
 
       
