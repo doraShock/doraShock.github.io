@@ -212,9 +212,9 @@ public class TestTcpIpSocket{
     
       <category term="Java" scheme="https://dorashock.github.io/tags/Java/"/>
     
-      <category term="Socket" scheme="https://dorashock.github.io/tags/Socket/"/>
-    
       <category term="note" scheme="https://dorashock.github.io/tags/note/"/>
+    
+      <category term="Socket" scheme="https://dorashock.github.io/tags/Socket/"/>
     
       <category term="TCP/IP" scheme="https://dorashock.github.io/tags/TCP-IP/"/>
     
@@ -311,9 +311,9 @@ class Ternary {
     
       <category term="Java" scheme="https://dorashock.github.io/tags/Java/"/>
     
-      <category term="note" scheme="https://dorashock.github.io/tags/note/"/>
-    
       <category term="基础" scheme="https://dorashock.github.io/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="note" scheme="https://dorashock.github.io/tags/note/"/>
     
       <category term="运算符" scheme="https://dorashock.github.io/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
@@ -824,11 +824,11 @@ aboutme: 向前进&lt;br&gt;&lt;br&gt;每天积累一点点&lt;br&gt;&lt;br&gt;�
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
+    
       <category term="yilia" scheme="https://dorashock.github.io/tags/yilia/"/>
     
       <category term="畅言" scheme="https://dorashock.github.io/tags/%E7%95%85%E8%A8%80/"/>
-    
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   
@@ -953,9 +953,9 @@ tags: 文章                  //文章标签，可用中文，多个标签用 [J
     
       <category term="hexo" scheme="https://dorashock.github.io/tags/hexo/"/>
     
-      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
-    
       <category term="github" scheme="https://dorashock.github.io/tags/github/"/>
+    
+      <category term="blog" scheme="https://dorashock.github.io/tags/blog/"/>
     
   </entry>
   
