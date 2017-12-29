@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[深入理解java虚拟机-JVM高级特性与最佳实践]]></title>
+    <title><![CDATA[深入理解java虚拟机-JVM高级特性与最佳实践学习记录]]></title>
     <url>%2F2017%2F12%2F29%2Funderstand-the-JVM%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[来新公司快俩月了，除了一开始应上司要求快速看了Java TCP/IP Socket编程的书，剩下时间都在看Java基础教程一书。socket的内容理解了大概四分之三吧，后面结尾部分不是很懂，准备看完另外几个资料回去复习，只记录了一个Java TCP+IP+Socket编程记录（上），剩下的等我复习的时候补上；Java基础也是刚刚结束，也只记录了运算符的部分，剩下的看下来没什么需要记录的，也是因为资料太老了，以jdk1.2为主讲的，当然后面三张我就大致跳过了，因为讲的内容以桌面小程序为主，对我来说都不是很重要。犹豫了半天，选择了深入理解java虚拟机-JVM高级特性与最佳实践来阅读并学习，在此博客里记录相关内容，重点感谢作者周志明老师。]]></content>
       <categories>
         <category>技术</category>
       </categories>
