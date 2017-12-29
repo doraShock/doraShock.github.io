@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://dorashock.github.io/2017/12/29/understand-the-JVM/</loc>
-    <lastmod>2017-12-29T06:40:39.314Z</lastmod>
+    <lastmod>2017-12-29T10:01:04.303Z</lastmod>
     <data>
         <display>
         <title>深入理解java虚拟机-JVM高级特性与最佳实践学习记录</title>
@@ -37,9 +37,9 @@
         
         <tag>Java</tag>
          
-        <tag>Socket</tag>
-         
         <tag>note</tag>
+         
+        <tag>Socket</tag>
          
         <tag>TCP/IP</tag>
          
@@ -87,9 +87,9 @@
         
         <tag>Java</tag>
          
-        <tag>note</tag>
-         
         <tag>基础</tag>
+         
+        <tag>note</tag>
          
         <tag>运算符</tag>
          
