@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="一将功成万骨枯" />
+  <meta name="keywords" content="Java,note,JVM," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="myReader  *{ margin: 0; padding: 0; }  body{ background: #eee; overflow-x : hidden; overflow-y : hidden; }  #container{ width: 600px; height: 400px; background: #eee; position: relative; } .tag{">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DoraShock">
-<meta property="og:url" content="https://dorashock.github.io/assets/demo/my_news_reader/index.html">
+<meta name="description" content="小小程序员~">
+<meta name="keywords" content="Java,note,JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入理解java虚拟机-JVM高级特性与最佳实践">
+<meta property="og:url" content="https://dorashock.github.io/2017/12/29/understand-the-JVM/index.html">
 <meta property="og:site_name" content="DoraShock">
-<meta property="og:description" content="myReader  *{ margin: 0; padding: 0; }  body{ background: #eee; overflow-x : hidden; overflow-y : hidden; }  #container{ width: 600px; height: 400px; background: #eee; position: relative; } .tag{">
+<meta property="og:description" content="小小程序员~">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2016-12-30T22:16:28.000Z">
+<meta property="og:updated_time" content="2017-12-29T05:55:12.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DoraShock">
-<meta name="twitter:description" content="myReader  *{ margin: 0; padding: 0; }  body{ background: #eee; overflow-x : hidden; overflow-y : hidden; }  #container{ width: 600px; height: 400px; background: #eee; position: relative; } .tag{">
+<meta name="twitter:title" content="深入理解java虚拟机-JVM高级特性与最佳实践">
+<meta name="twitter:description" content="小小程序员~">
 
 
 
@@ -125,7 +126,7 @@
 
 
 
-  <title> | DoraShock</title>
+  <title>深入理解java虚拟机-JVM高级特性与最佳实践 | DoraShock</title>
   
 
 
@@ -284,71 +285,198 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dorashock.github.io/2017/12/29/understand-the-JVM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shock.Le">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/role3.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DoraShock">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">深入理解java虚拟机-JVM高级特性与最佳实践</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T13:38:54+08:00">
+                2017-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>myReader</title>
-<style>
-*{
-margin: 0;
-padding: 0;
-}
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
 
-body{
-background: #eee;
-overflow-x : hidden;
-overflow-y : hidden;
-}
+                
+                
+              
+            </span>
+          
 
-#container{
-width: 600px;
-height: 400px;
-background: #eee;
-position: relative;
-}
-.tag{
-position: absolute;
-}
-</style>
-</head>
-<body>
-<button>点击变化布局</button>
-<div id="container"></div>
-<script type="text/javascript" src="js/tagConfig.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+          
+            
+          
 
-</body>
-</html>
+          
+          
 
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
-      </div>
-      
-      
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>小小程序员记录分享，有帮助就给点鼓励~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat.png" alt="Shock.Le 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/ali.jpg" alt="Shock.Le 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/note/" rel="tag"># note</a>
+          
+            <a href="/tags/JVM/" rel="tag"># JVM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/09/Java-TCP-IP-Socket/" rel="next" title="Java TCP+IP+Socket编程记录（上）">
+                <i class="fa fa-chevron-left"></i> Java TCP+IP+Socket编程记录（上）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 

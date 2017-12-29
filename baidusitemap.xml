@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://dorashock.github.io/2017/11/09/Java-TCP-IP-Socket/</loc>
-    <lastmod>2017-12-15T07:52:18.791Z</lastmod>
+    <lastmod>2017-12-29T06:00:40.232Z</lastmod>
     <data>
         <display>
         <title>Java TCP+IP+Socket编程记录（上）</title>
@@ -13,11 +13,35 @@
         
         <tag>Java</tag>
          
-        <tag>note</tag>
-         
         <tag>Socket</tag>
          
+        <tag>note</tag>
+         
         <tag>TCP/IP</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://dorashock.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://dorashock.github.io/2017/12/29/understand-the-JVM/</loc>
+    <lastmod>2017-12-29T05:55:12.892Z</lastmod>
+    <data>
+        <display>
+        <title>深入理解java虚拟机-JVM高级特性与最佳实践</title>
+        <pubTime>2017-12-29T05:38:54.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+        <tag>note</tag>
+         
+        <tag>JVM</tag>
          
          
            
@@ -63,9 +87,9 @@
         
         <tag>Java</tag>
          
-        <tag>基础</tag>
-         
         <tag>note</tag>
+         
+        <tag>基础</tag>
          
         <tag>运算符</tag>
          
