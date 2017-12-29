@@ -42,9 +42,9 @@
     <link href="https://dorashock.github.io/2017/11/09/Java-TCP-IP-Socket/"/>
     <id>https://dorashock.github.io/2017/11/09/Java-TCP-IP-Socket/</id>
     <published>2017-11-09T06:47:00.000Z</published>
-    <updated>2017-12-29T06:00:40.232Z</updated>
+    <updated>2017-12-29T06:05:06.988Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/P7iCcY9.jpg" alt=""></p>
+    <content type="html"><![CDATA[<p><img src="https://i.imgur.com/1GLpEEI.jpg" alt=""></p>
 <p>　　命运坎坷，以后有空再写入文章中。由于新工作要求，需要了解java socket的开发，所以找了Java TCP/IP Socket编程原书第2版，Kenneth L.Calvert Michael J.Donahoo著，周恒民老师译，机械工程出版社出版的。本来想练习下不做笔记，但是有些知识还是记了好，不然忘记了都没地方找去，想看原文章的可以自行百度，或者自行找联系我的方法。本人是单纯的选择了几个点进行记录，理解起来应该还算简单，概念比较多，想了解的话得有耐心看。</p>
 <a id="more"></a>
 <h2 id="基本概念和术语"><a href="#基本概念和术语" class="headerlink" title="基本概念和术语"></a>基本概念和术语</h2><p>　　<strong>计算机网络</strong> 由一组通过 <strong>通信信道</strong> 相互连接的机器组成，这些机器可分为 <strong>主机（hosts）</strong> 和 <strong>路由器（routers）</strong> 。<br>　　<strong>主机</strong> 就是指有应用程序运行的计算机， <strong>应用程序</strong> 就是我们常用的软件，比如浏览器，聊天工具等，这些应用程序才是计算机网络的真正“用户”。<br>　　<strong>路由器</strong> 一般不运行程序，但是也有例外，它的作用是将信息从一个通信信道传递或转发到另一个通信信道。<br>　　<strong>通信信道（communication channel）</strong> 基于我们的目的可以解释为将字节序列从一个主机传输到另一个主机的一种手段，可以是有线电缆，如以太网，也可以是无线，比如WiFi，或者其它方式的连接。<br>　　在网络上相互传递信息的程序不直接与路由器进行交互，它们基本上感觉不到路由器的存在。<br>　　这些 <strong>信息（information）</strong> 是指由程序创建和解释的 <strong>字节序列</strong>。这些字节序列被称为 <strong>分组报文（packet）</strong> 。<br>　　<strong>分组报文</strong> 包含了完成目的的控制信息，也可以加入一些用户数据，定位分组报文目的地址的信息就是一个例子，路由器可以根据这些信息实现报文的转发。<br>　　<strong>协议（protocol）</strong> 相当于相互通信之间的程序达成的一种约定，定义了分组报文的交换方式以及包含的意义。<br>　　<strong>TCP/IP</strong> 协议族主要包含的协议有 <strong>IP协议（Internet Protocol，互联网协议）</strong> ， <strong>TCP协议（Transmission Control Protocol，传输控制协议）</strong> 和 <strong>UDP协议（User Datagram Protocol，用户数据报协议）</strong>。  </p>
@@ -62,7 +62,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/P7iCcY9.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/1GLpEEI.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;　　命运坎坷，以后有空再写入文章中。由于新工作要求，需要了解java socket的开发，所以找了Java TCP/IP Socket编程原书第2版，Kenneth L.Calvert Michael J.Donahoo著，周恒民老师译，机械工程出版社出版的。本来想练习下不做笔记，但是有些知识还是记了好，不然忘记了都没地方找去，想看原文章的可以自行百度，或者自行找联系我的方法。本人是单纯的选择了几个点进行记录，理解起来应该还算简单，概念比较多，想了解的话得有耐心看。&lt;/p&gt;
     
     </summary>
