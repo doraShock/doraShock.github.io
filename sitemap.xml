@@ -4,7 +4,7 @@
   <url>
     <loc>https://dorashock.github.io/2017/12/29/understand-the-JVM/</loc>
     
-    <lastmod>2018-01-04T03:37:55.131Z</lastmod>
+    <lastmod>2018-01-11T10:08:48.888Z</lastmod>
     
   </url>
   
@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://dorashock.github.io/assets/demo/border1px.html</loc>
-    
-    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dorashock.github.io/assets/demo/hack_demo.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
@@ -107,6 +100,13 @@
   </url>
   
   <url>
+    <loc>https://dorashock.github.io/assets/demo/border1px.html</loc>
+    
+    <lastmod>2016-12-30T22:16:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dorashock.github.io/assets/demo/coffee_pc_demo/pro-con.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
@@ -121,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://dorashock.github.io/assets/demo/mediator/demo.html</loc>
+    <loc>https://dorashock.github.io/assets/demo/my_news_reader/index.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dorashock.github.io/assets/demo/my_news_reader/index.html</loc>
+    <loc>https://dorashock.github.io/assets/demo/mediator/demo.html</loc>
     
     <lastmod>2016-12-30T22:16:28.000Z</lastmod>
     
